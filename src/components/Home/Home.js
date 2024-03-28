@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import Header from './header/Header';
 import RequestServiceNow from './requestServiceNow/requestServiceNow';
 import InfoSection from './infoSection/infoSection';
+import HowCanWeHelp from './howCanWeHelp/howCanWeHelp';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Header />
       <RequestServiceNow />
       <InfoSection />
+      <HowCanWeHelp />
     </Box>
   );
 };
