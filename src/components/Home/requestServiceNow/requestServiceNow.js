@@ -15,6 +15,7 @@ const RequestServiceNow = () => {
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '2em',
+        paddingBottom: '2em',
       }}
     >
       <Box

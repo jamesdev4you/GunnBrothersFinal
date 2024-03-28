@@ -5,6 +5,7 @@ import Header from './header/Header';
 import RequestServiceNow from './requestServiceNow/requestServiceNow';
 import InfoSection from './infoSection/infoSection';
 import HowCanWeHelp from './howCanWeHelp/howCanWeHelp';
+import FAQ from './faq/faq';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <RequestServiceNow />
       <InfoSection />
       <HowCanWeHelp />
+      <FAQ />
     </Box>
   );
 };

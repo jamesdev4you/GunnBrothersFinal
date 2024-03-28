@@ -65,7 +65,6 @@ const HeaderOptions = () => {
         height: 'auto',
         paddingTop: { xs: '6em', sm: '4em' },
         paddingBottom: '2em',
-
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -95,7 +94,7 @@ const HeaderOptions = () => {
           }}
         >
           <Typography
-            variant='subtitle1'
+            variant='h6'
             sx={{
               marginTop: '.3em',
               fontWeight: 'bold',
