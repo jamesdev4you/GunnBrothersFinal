@@ -2,7 +2,6 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { MyNormalButton } from '../../styledComponents';
-import { ReactTyped } from 'react-typed';
 
 const HeaderText = () => {
   return (
