@@ -8,12 +8,6 @@ a.nav_link:hover {
   color: black;
 }
 
-.nav_links {
-  text-decoration: none;
-  color: black;
-  cursor: url(./assets//pictures/cursor.png), auto;
-}
-
 .nav_links:hover {
   text-decoration: none;
   color: black;

@@ -19,29 +19,13 @@ const HeaderText = () => {
           }}
         >
           <Typography variant='h1' sx={{ fontWeight: 'bold' }}>
-          The Place To <span />
+          The Gunn Brothers
         
       
           </Typography>
           <Typography variant='h2' sx={{ fontWeight: 'bold',  }}>
-           🐝 <span />
-        <ReactTyped
-          style={{ color: 'gold' }}
-          strings={[
-            ' Active.',
-            ' Organic.',
-            ' Managable.',
-            ' Productive.',
-            ' Happy.',
-          ]}
-          typeSpeed={100}
-          loop
-          backSpeed={70}
-          cursorChar='|'
-          showCursor={true}
-        />
+           of Tampa Bay
           </Typography>
-
           <Typography
             variant='subtitle1'
             sx={{

@@ -1,11 +1,9 @@
 import Button from '@mui/material/Button';
 import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import '../font.css';
 import { NavLink } from 'react-router-dom';
-import '../navlink.css'
-import beeCursor from '../assets/pictures/cursor.png';
-
+import '../navlink.css';
 
 const HeaderButton = styled(Button)(({ theme }) => ({
   fontSize: '11px',
@@ -13,7 +11,6 @@ const HeaderButton = styled(Button)(({ theme }) => ({
   letterSpacing: '2px',
   padding: '7px 50px 7px',
   outline: '0',
-  cursor: `url(${beeCursor}), auto`,
   color: theme.palette.text.primary,
   position: 'relative',
   backgroundColor: 'white',
@@ -53,7 +50,6 @@ const NormalButton = styled(Button)(({ theme }) => ({
   padding: '7px 50px 7px',
   outline: '0',
   border: `1px solid ${theme.palette.error.main}`,
-  cursor: `url(${beeCursor}), auto`,
   color: `${theme.palette.secondary.main}`,
   position: 'relative',
   backgroundColor: theme.palette.primary.main,
@@ -63,7 +59,6 @@ const NormalButton = styled(Button)(({ theme }) => ({
   '&:hover': {
     color: theme.palette.info.main,
   },
-  
 }));
 
 const NavButton = styled(Button)(({ theme }) => ({
@@ -73,7 +68,6 @@ const NavButton = styled(Button)(({ theme }) => ({
   height: '30px',
   outline: '0',
   border: `1px solid ${theme.palette.info.main}`,
-  cursor: `url(${beeCursor}), auto`,
   color: `${theme.palette.primary.main}`,
   fontWeight: 'bold',
   position: 'relative',
@@ -94,7 +88,6 @@ const FormButton = styled(Button)(({ theme }) => ({
   height: '30px',
   outline: '0',
   border: `1px solid ${theme.palette.secondary.main}`,
-  cursor: `url(${beeCursor}), auto`,
   color: `${theme.palette.primary.main}`,
   fontWeight: 'bold',
   position: 'relative',
@@ -107,6 +100,46 @@ const FormButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const HoverButton = styled(Button)(({ theme }) => ({
+  fontSize: '14px',
+  fontWeight: '900',
+  letterSpacing: '2px',
+  padding: '14px 50px 14px',
+  outline: '0',
+  cursor: 'pointer',
+  color: theme.palette.text.primary,
+  position: 'relative',
+  backgroundColor: 'white',
+  userSelect: 'none',
+  touchAction: 'manipulation',
+  borderRadius: '11px',
+  fontFamily: 'Birds',
+  '&:after': {
+    content: '""',
+    backgroundColor: 'rgba(0,0,0,0)',
+    border: `2px solid ${theme.palette.info.main}`,
+    width: '100%',
+    zIndex: '1',
+    position: 'absolute',
+    height: '100%',
+    top: '4px',
+    left: '4px',
+    transition: '0.2s',
+    borderRadius: '15px',
+  },
+  '&:hover:after': {
+    border: `2px solid ${theme.palette.info.main}`,
+    top: '-2px',
+    left: '-2px',
+  },
+  '&:hover': {
+    backgroundColor: theme.palette.background.paper,
+  },
+  [`@media (min-width: 768px)`]: {
+    padding: '10px 50px 10px',
+  },
+}));
+
 const HoneyButton = styled(Button)(({ theme }) => ({
   fontSize: '15px',
   letterSpacing: '1px',
@@ -114,7 +147,6 @@ const HoneyButton = styled(Button)(({ theme }) => ({
   height: '30px',
   outline: '0',
   border: `1px solid ${theme.palette.secondary.main}`,
-  cursor: `url(${beeCursor}), auto`,
   color: `${theme.palette.primary.main}`,
   fontWeight: 'bold',
   position: 'relative',
@@ -134,7 +166,6 @@ const HiveButton = styled(Button)(({ theme }) => ({
   height: '30px',
   outline: '0',
   border: `1px solid ${theme.palette.secondary.main}`,
-  cursor: `url(${beeCursor}), auto`,
   color: `${theme.palette.primary.main}`,
   fontWeight: 'bold',
   position: 'relative',
@@ -156,21 +187,43 @@ export const MyNormalButton = (props) => (
 );
 
 export const MyNavButton = (props) => (
-  <NavButton variant='contained'><NavLink to='/form' className='nav_links' >{props.children}</NavLink></NavButton>
+  <NavButton variant='contained'>
+    <NavLink to='/form' className='nav_links'>
+      {props.children}
+    </NavLink>
+  </NavButton>
 );
 
 export const MyFormButton = (props) => (
-  <FormButton variant='contained' type="submit"><NavLink to='/dashboard' className='nav_links' >{props.children}</NavLink></FormButton>
+  <FormButton variant='contained' type='submit'>
+    <NavLink to='/dashboard' className='nav_links'>
+      {props.children}
+    </NavLink>
+  </FormButton>
 );
 
 export const MyXButton = (props) => (
-  <FormButton variant='contained' type="submit"><NavLink to='/dashboard' className='nav_links' >{props.children}</NavLink></FormButton>
+  <FormButton variant='contained' type='submit'>
+    <NavLink to='/dashboard' className='nav_links'>
+      {props.children}
+    </NavLink>
+  </FormButton>
 );
 
 export const MyHoneyButton = (props) => (
-  <HoneyButton variant='contained' type="submit">{props.children}</HoneyButton>
+  <HoneyButton variant='contained' type='submit'>
+    {props.children}
+  </HoneyButton>
 );
 
 export const MyHiveButton = (props) => (
-  <HiveButton variant='contained' type="submit"><NavLink to='/dashboard' className='nav_links' >{props.children}</NavLink></HiveButton>
+  <HiveButton variant='contained' type='submit'>
+    <NavLink to='/dashboard' className='nav_links'>
+      {props.children}
+    </NavLink>
+  </HiveButton>
+);
+
+export const MyHoverButton = (props) => (
+  <HoverButton variant='contained'>{props.children}</HoverButton>
 );

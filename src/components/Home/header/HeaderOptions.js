@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import SvgIcon from '@mui/material/SvgIcon';
 import { ReactComponent as Facebook } from '../../../assets/svg/facebook.svg';
@@ -10,20 +10,16 @@ import { ReactComponent as Email } from '../../../assets/svg/email.svg';
 import Typography from '@mui/material/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import beeCursor from '../../../assets/pictures/cursor.png';
-
-
 
 const HeaderOptions = () => {
-    const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0);
 
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
-    const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
-  
-    const [hovered, setHovered] = useState(null);
-    const circleOptions = [
+  const [hovered, setHovered] = useState(null);
+  const circleOptions = [
     {
       logo: Facebook,
       text: 'Facebook',
@@ -65,15 +61,14 @@ const HeaderOptions = () => {
   return (
     <Box
       sx={{
-        width: {xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%'},
+        width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
         height: 'auto',
-        paddingTop: {xs: '6em', sm: '4em'},
+        paddingTop: { xs: '6em', sm: '4em' },
         paddingBottom: '2em',
-        
+
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        
       }}
     >
       {circleOptions.map(({ logo, text, viewBox, key }) => (
@@ -95,8 +90,7 @@ const HeaderOptions = () => {
             alignItems: 'center',
             justifyContent: 'center',
             '&:hover': {
-              cursor: `url(${beeCursor}), auto`,
-
+              cursor: 'pointer',
             },
           }}
         >
@@ -108,7 +102,7 @@ const HeaderOptions = () => {
               letterSpacing: '1px',
               lineHeight: '50px',
               transition: 'all .1s ease-in-out',
-              
+
               zIndex: '100',
               color: 'primary.main',
             }}
@@ -125,7 +119,7 @@ const HeaderOptions = () => {
               alignItems: 'center',
               justifyContent: 'center',
               transition: 'all .1s ease-in-out',
-              
+
               boxShadow:
                 hovered === key
                   ? 'rgba(0, 0, 0, 0.2) 0px 18px 50px -10px'
@@ -156,7 +150,6 @@ const HeaderOptions = () => {
               }}
             ></SvgIcon>
           </Box>
-          
         </Box>
       ))}
       <Tabs
@@ -190,7 +183,7 @@ const HeaderOptions = () => {
           },
           width: '100%',
           alignItems: 'center',
-          gap: {xs: '0em', sm: '4em'},
+          gap: { xs: '0em', sm: '4em' },
           justifyContent: 'center',
           backgroundColor: 'primary.main',
           paddingTop: {
@@ -200,7 +193,6 @@ const HeaderOptions = () => {
             lg: 'none',
             xl: 'none',
           },
-          
         }}
       >
         {circleOptions.map(({ logo, text, viewBox, key }) => (
@@ -221,7 +213,6 @@ const HeaderOptions = () => {
                     sm: '60px',
                   },
                   color: 'secondary.main',
-                
                 }}
               />
             }
@@ -230,8 +221,8 @@ const HeaderOptions = () => {
               '& .MuiTab-root': {
                 color: 'seconday.main !important', // Overrides the color property more forcefully
               },
-              "&.Mui-selected": {
-                color: "info.main"
+              '&.Mui-selected': {
+                color: 'info.main',
               },
               marginRight: '15px',
             }}
@@ -239,7 +230,7 @@ const HeaderOptions = () => {
         ))}
       </Tabs>
     </Box>
-    );
-}
+  );
+};
 
-export default HeaderOptions
+export default HeaderOptions;

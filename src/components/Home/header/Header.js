@@ -24,10 +24,9 @@ const Header = () => {
           sm: 'center',
           xs: 'center',
         },
-        marginBottom: '3em',
         height: 'auto',
         flexDirection: 'column',
-        paddingTop: {xs: '0px', sm: '3em'}
+        paddingTop: { xs: '0px', sm: '3em' },
       }}
     >
       <Box
@@ -69,7 +68,7 @@ const Header = () => {
       </Box>
       <HeaderOptions />
     </Box>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

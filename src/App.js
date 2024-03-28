@@ -3,7 +3,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 
-
 const theme = createTheme({
   palette: {
     mode: 'light',
@@ -11,16 +10,16 @@ const theme = createTheme({
       main: '#000000',
     },
     secondary: {
-      main: '#ffffff',
+      main: '#F4F4F9',
     },
     error: {
-      main: '#ffffff',
+      main: '#2F4550',
     },
     warning: {
-      main: '#f1f1f1',
+      main: '#586F7C',
     },
     info: {
-      main: '#FFC60B',
+      main: '#B8DBD9',
     },
   },
   typography: {
@@ -60,15 +59,13 @@ const theme = createTheme({
   },
 });
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='*' element={<Home />} />
-      
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Home />} />
+      </Routes>
     </ThemeProvider>
   );
 }

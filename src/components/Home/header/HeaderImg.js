@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Box from '@mui/material/Box';
-import Technician from '../../../assets/pictures/tech.png';
+import GunnBros from '../../../assets/pictures/logoBlack.png';
 
 const HeaderImg = () => {
   return (
@@ -29,7 +29,7 @@ const HeaderImg = () => {
     >
       <Box
         sx={{
-          backgroundImage: `url(${Technician})`,
+          backgroundImage: `url(${GunnBros})`,
           width: {
             xl: '350px',
             lg: '250px',
@@ -54,12 +54,10 @@ const HeaderImg = () => {
             sm: '0px',
             xs: '0px',
           },
-
-
         }}
       />
     </Box>
-  )
-}
+  );
+};
 
-export default HeaderImg
+export default HeaderImg;
