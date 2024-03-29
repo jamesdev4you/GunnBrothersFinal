@@ -65,7 +65,7 @@ const HowCanGrid = () => {
             onMouseEnter={() => setHovered(item.key)}
             onMouseLeave={() => setHovered(null)}
             sx={{
-              height: { xl: '40vh', lg: '40vh', md: '40vh', sm: '15vh', xs: '100%' },
+              height: { xl: '40vh', lg: '40vh', md: '40vh', sm: '15vh', xs: '15vh' },
               backgroundColor: 'primary.main',
               borderColor: 'info.main',
               borderRadius: '15px',

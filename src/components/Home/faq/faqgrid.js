@@ -44,7 +44,7 @@ const FAQGrid = () => {
           <Box
             sx={{
               display: 'flex',
-              height: '4em',
+              height: {xl: '4em', lg: '4em', md: '4em', sm: '4em', xs: '6em'},
               alignItems: 'center',
               justifyContent: 'space-between',
               backgroundColor: 'black',

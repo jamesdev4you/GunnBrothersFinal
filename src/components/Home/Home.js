@@ -21,7 +21,7 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        gap: '6em',
+        gap: {xl: '6em', lg: '6em', md: '6em', sm: '3em', sx: '3em'},
         position: 'relative'
       }}
     >

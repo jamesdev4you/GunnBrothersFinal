@@ -8,13 +8,14 @@ const HowCanWeHelp = () => {
   return (
     <Box
       sx={{
-        width: { xl: '80%', lg: '70%', md: '90%', sm: '80%', xs: '100%' },
+        width: { xl: '80%', lg: '70%', md: '90%', sm: '80%', xs: '90%' },
         height: 'auto',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'start',
         justifyContent: 'space-between',
         gap: '2em',
+        marginTop: { xl: '0px', lg: '0px', md: '0px', sm: '2em', xs: '6em' },
       }}
     >
       <Typography

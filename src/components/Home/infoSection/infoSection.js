@@ -13,7 +13,7 @@ const InfoSection = () => {
         display: 'flex',
         alignItems: {xl: 'start', lg: 'start', md: 'start', sm: 'center', xs: 'center'},
         justifyContent: {xl: 'space-between', lg: 'space-between', md: 'space-between', sm: 'start', xs: 'start'},
-        gap: {xl: '0em', lg: '0em', md: '0em', sm: '9em', xs: '3em'},
+        gap: {xl: '0em', lg: '0em', md: '0em', sm: '9em', xs: '9em'},
       }}
     >
       <InfoImageSection />

@@ -9,7 +9,7 @@ const HowCanButtons = () => {
       sx={{
         width: '100%',
         height: '8em',
-        display: 'flex',
+        display: {xl: 'flex', lg: 'flex', md: 'flex', sm: 'flex', xs: 'none'},
         alignItems: 'center',
         justifyContent: 'space-around',
         backgroundColor: 'black',
@@ -21,7 +21,6 @@ const HowCanButtons = () => {
       <MyHoverButton children='Request Appointment' />
       <Box
         sx={{
-          display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',

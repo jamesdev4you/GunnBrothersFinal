@@ -21,6 +21,7 @@ const HomeTestimonials = () => {
       borderBottomLeftRadius: '80px',
       borderBottomRightRadius: { xl: '0px', lg: '0px', md: '0px', sm: '80px', xs: '80px' },
       position: 'relative',
+      marginTop: { xl: '0px', lg: '0px', md: '0px', sm: '2em', xs: '2em' },
     }}
   >
             <Box
@@ -34,7 +35,7 @@ const HomeTestimonials = () => {
           display: {xl: 'none', lg: 'none', md: 'none', sm: 'flex', xs: 'flex'},
         }}
       />
-    <Box sx={{margin: '3em', gap: '1em', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', width: '50%'}}>
+    <Box sx={{margin: '3em', gap: '1em', display: 'flex', flexDirection: 'column', alignItems: {xl: 'start', lg: 'start', md: 'start', sm: 'center', xs: 'center'}, justifyContent: 'center', width: {xl: '50%', lg: '50%', md: '50%', sm: '80%', xs: '80%'}, }}>
         <Typography variant='h2' sx={{color: 'secondary.main'}}>
             Testimonials
         </Typography>
@@ -113,7 +114,7 @@ const HomeTestimonials = () => {
       <Box
         sx={{
           height: {xl: '60vh', lg: '40vh', md: '40vh', sm: '40vh'},
-          width: '30%',
+          width: {xl: '30%', lg: '30%', md: '30%', sm: '40%'},
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
