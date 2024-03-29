@@ -9,7 +9,7 @@ const RequestServiceNow = () => {
     <Box
       sx={{
         width: '100%',
-        height: '22vh',
+        height: { xl: '22vh', lg: '22vh', md: '18vh' },
         backgroundColor: 'primary.main',
         display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none' },
         alignItems: 'center',

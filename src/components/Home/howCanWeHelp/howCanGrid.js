@@ -65,7 +65,13 @@ const HowCanGrid = () => {
             onMouseEnter={() => setHovered(item.key)}
             onMouseLeave={() => setHovered(null)}
             sx={{
-              height: { xl: '40vh', lg: '40vh', md: '40vh', sm: '15vh', xs: '15vh' },
+              height: {
+                xl: '10vh',
+                lg: '30vh',
+                md: '30vh',
+                sm: '15vh',
+                xs: '15vh',
+              },
               backgroundColor: 'primary.main',
               borderColor: 'info.main',
               borderRadius: '15px',
@@ -73,9 +79,21 @@ const HowCanGrid = () => {
               borderStyle: 'solid',
               cursor: 'pointer',
               display: 'flex',
-              flexDirection: {xl: 'column', lg: 'column', md: 'column', sm: 'row', xs: 'row'},
+              flexDirection: {
+                xl: 'row',
+                lg: 'row',
+                md: 'row',
+                sm: 'row',
+                xs: 'row',
+              },
               alignItems: 'center',
-              justifyContent: {xl: 'center', lg: 'center', md: 'center', sm: 'center', xs: 'center'},
+              justifyContent: {
+                xl: 'center',
+                lg: 'center',
+                md: 'center',
+                sm: 'center',
+                xs: 'center',
+              },
               gap: '1em',
             }}
           >
@@ -89,7 +107,7 @@ const HowCanGrid = () => {
                   sm: '60px',
                   md: hovered === item.key ? '50px' : '40px',
                   lg: hovered === item.key ? '100px' : '120px',
-                  xl: hovered === item.key ? '120px' : '140px',
+                  xl: hovered === item.key ? '50px' : '70px',
                 },
 
                 width: {
@@ -97,13 +115,13 @@ const HowCanGrid = () => {
                   sm: '60px',
                   md: hovered === item.key ? '50px' : '40px',
                   lg: hovered === item.key ? '100px' : '120px',
-                  xl: hovered === item.key ? '120px' : '140px',
+                  xl: hovered === item.key ? '50px' : '30px',
                 },
                 color: hovered === item.key ? 'info.main' : 'secondary.main',
               }}
             />
             <Typography
-              variant='h2'
+              variant='h3'
               sx={{
                 color: hovered === item.key ? 'info.main' : 'secondary.main',
                 fontWeight: 'bold',

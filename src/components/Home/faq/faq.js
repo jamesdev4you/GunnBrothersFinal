@@ -12,7 +12,7 @@ const FAQ = () => {
         alignItems: 'center',
         justifyContent: 'center',
         gap: '3em',
-        width: { xl: '80%', lg: '70%', md: '90%', sm: '80%', xs: '90%' },
+        width: { xl: '60%', lg: '70%', md: '90%', sm: '80%', xs: '90%' },
         marginTop: { xl: '0px', lg: '0px', md: '0px', sm: '2em', xs: '2em' },
       }}
     >

@@ -21,8 +21,8 @@ const Home = () => {
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
-        gap: {xl: '6em', lg: '6em', md: '6em', sm: '3em', sx: '3em'},
-        position: 'relative'
+        gap: { xl: '11em', lg: '11em', md: '6em', sm: '3em', sx: '3em' },
+        position: 'relative',
       }}
     >
       <Navbar />
@@ -35,58 +35,58 @@ const Home = () => {
       <Footer />
       <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '30%',
+          height: { xl: '30vh', lg: '20vh' },
+          width: { xl: '12vw', lg: '15vw' },
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
           backgroundPosition: 'center',
           position: 'absolute',
-          left: '-20%',
+          left: { xl: '3%', lg: '0%' },
           bottom: '40%',
-          opacity: '.2'
+          opacity: '.3',
         }}
       />
-            <Box
+      <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '30%',
+          height: { xl: '30vh', lg: '20vh' },
+          width: { xl: '12vw', lg: '15vw' },
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
           backgroundPosition: 'center',
           position: 'absolute',
-          right: '-20%',
+          right: { xl: '5%', lg: '0%' },
           bottom: '30%',
-          opacity: '.2'
+          opacity: '.3',
         }}
       />
-                  <Box
+      <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '30%',
+          height: { xl: '30vh', lg: '20vh' },
+          width: { xl: '12vw', lg: '15vw' },
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
           backgroundPosition: 'center',
           position: 'absolute',
-          left: '-20%',
+          left: { xl: '3%', lg: '0%' },
           bottom: '10%',
-          opacity: '.2'
+          opacity: '.3',
         }}
       />
-           <Box
+      <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '30%',
+          height: { xl: '30vh', lg: '20vh' },
+          width: { xl: '12vw', lg: '15vw' },
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
           backgroundPosition: 'center',
           position: 'absolute',
-          right: '-15%',
+          right: { xl: '5%', lg: '0%' },
           bottom: '65%',
-          opacity: '.2'
+          opacity: '.3',
         }}
       />
     </Box>

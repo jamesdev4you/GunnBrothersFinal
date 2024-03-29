@@ -9,6 +9,7 @@ const Header = () => {
     <Box
       sx={{
         width: { xl: '70%', lg: '100%', md: '100%', sm: '100%', xs: '100%' },
+        height: { xl: '60vh', lg: '50vh', md: '80vh', sm: '100%', xs: '100%' },
         display: 'flex',
         justifyContent: {
           xl: 'start',
@@ -24,7 +25,6 @@ const Header = () => {
           sm: 'center',
           xs: 'center',
         },
-        height: 'auto',
         flexDirection: 'column',
         paddingTop: { xs: '0px', sm: '3em' },
       }}
@@ -32,6 +32,7 @@ const Header = () => {
       <Box
         sx={{
           width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
+          height: { xl: '65%', lg: '80%', md: '80%', sm: '50vh', xs: '45vh' },
           display: 'flex',
           flexDirection: {
             xl: 'row',
