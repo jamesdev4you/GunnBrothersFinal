@@ -67,7 +67,7 @@ const HomeTestimonials = () => {
       />
       <Box
         sx={{
-          padding: '1em',
+          padding: '3em',
           gap: '1em',
           display: 'flex',
           flexDirection: 'column',
