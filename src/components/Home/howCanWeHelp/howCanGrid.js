@@ -67,10 +67,10 @@ const HowCanGrid = () => {
             sx={{
               height: {
                 xl: '10vh',
-                lg: '30vh',
-                md: '30vh',
-                sm: '15vh',
-                xs: '15vh',
+                lg: '10vh',
+                md: '10vh',
+                sm: '12vh',
+                xs: '10vh',
               },
               backgroundColor: 'primary.main',
               borderColor: 'info.main',

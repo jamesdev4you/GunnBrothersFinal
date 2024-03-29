@@ -24,14 +24,14 @@ const RequestServiceNow = () => {
           width: {
             xl: '200px',
             lg: '150px',
-            md: '150px',
+            md: '100px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
             lg: '150px',
-            md: '150px',
+            md: '100px',
             sm: '200px',
             xs: '200px',
           },
@@ -108,14 +108,14 @@ const RequestServiceNow = () => {
           width: {
             xl: '200px',
             lg: '150px',
-            md: '150px',
+            md: '100px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
             lg: '150px',
-            md: '150px',
+            md: '100px',
             sm: '200px',
             xs: '200px',
           },

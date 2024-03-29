@@ -12,7 +12,7 @@ const HomeTestimonials = () => {
   return (
     <Box
       sx={{
-        width: { xl: '80%', lg: '85%', md: '95%', sm: '80%', xs: '100%' },
+        width: { xl: '80%', lg: '85%', md: '95%', sm: '80%', xs: '90%' },
         height: { xl: '60vh', lg: '60vh', md: '50vh', sm: 'auto', xs: 'auto' },
         display: 'flex',
         flexDirection: {
@@ -35,8 +35,8 @@ const HomeTestimonials = () => {
           xl: 'auto',
           lg: 'auto',
           md: 'auto',
-          sm: '80px',
-          xs: '80px',
+          sm: '0px',
+          xs: '0px',
         },
         position: 'relative',
         marginTop: { xl: '0px', lg: '0px', md: '0px', sm: '2em', xs: '2em' },
@@ -44,7 +44,13 @@ const HomeTestimonials = () => {
     >
       <Box
         sx={{
-          height: { xl: '60vh', lg: '40vh', md: '40vh', sm: '40vh' },
+          height: {
+            xl: '60vh',
+            lg: '40vh',
+            md: '40vh',
+            sm: '40vh',
+            xs: '30vh',
+          },
           width: '100%',
           backgroundImage: `url(${Technician})`,
           backgroundSize: 'cover',
@@ -61,7 +67,7 @@ const HomeTestimonials = () => {
       />
       <Box
         sx={{
-          margin: '3em',
+          padding: '1em',
           gap: '1em',
           display: 'flex',
           flexDirection: 'column',
@@ -73,7 +79,7 @@ const HomeTestimonials = () => {
             xs: 'center',
           },
           justifyContent: 'center',
-          width: { xl: '50%', lg: '50%', md: '50%', sm: '80%', xs: '80%' },
+          width: { xl: '50%', lg: '50%', md: '50%', sm: '80%', xs: '100%' },
         }}
       >
         <Typography variant='h2' sx={{ color: 'secondary.main' }}>
@@ -176,7 +182,7 @@ const HomeTestimonials = () => {
             backgroundPosition: 'center',
             position: 'absolute',
             left: '30%',
-            bottom: { xl: '5%', lg: '20%', md: '30%', sm: '40%' },
+            bottom: { xl: '5%', lg: '20%', md: '2s0%', sm: '10%' },
             opacity: '.1',
           }}
         />

@@ -6,7 +6,7 @@ const InfoTextSection = () => {
   return (
     <Box
       sx={{
-        width: {xl: '50%', lg: '50%', md: '50%', sm: '80%'},
+        width: { xl: '50%', lg: '50%', md: '50%', sm: '80%' },
         height: 'auto',
         display: 'flex',
       }}
@@ -67,8 +67,13 @@ const InfoTextSection = () => {
           }}
         >
           <Typography
-            variant='h5'
-            sx={{ color: 'secondary.main', marginTop: '5px', width: '80%' }}
+            variant='h6'
+            sx={{
+              color: 'secondary.main',
+              marginTop: '5px',
+              width: '80%',
+              fontWeight: 'bold',
+            }}
           >
             Call our emergency service hotline for instant service at
             813-813-8131

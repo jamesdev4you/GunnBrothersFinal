@@ -21,10 +21,16 @@ const HeaderText = () => {
         justifyContent: 'start',
       }}
     >
-      <Typography variant='h1' sx={{ fontWeight: 'bold' }}>
+      <Typography
+        variant='h1'
+        sx={{ fontWeight: 'bold', textAlign: { xs: 'center', sm: 'none' } }}
+      >
         The Gunn Brothers
       </Typography>
-      <Typography variant='h2' sx={{ fontWeight: 'bold' }}>
+      <Typography
+        variant='h2'
+        sx={{ fontWeight: 'bold', textAlign: { xs: 'center', sm: 'none' } }}
+      >
         of Tampa Bay
       </Typography>
       <Typography

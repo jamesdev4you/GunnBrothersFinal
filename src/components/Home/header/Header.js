@@ -9,7 +9,20 @@ const Header = () => {
     <Box
       sx={{
         width: { xl: '70%', lg: '100%', md: '100%', sm: '100%', xs: '100%' },
-        height: { xl: '60vh', lg: '50vh', md: '80vh', sm: '100%', xs: '100%' },
+        height: {
+          xl: '60vh',
+          lg: '50vh',
+          md: '60vh',
+          sm: '100vh',
+          xs: '100vh',
+        },
+        gap: {
+          xl: '0px',
+          lg: '0px',
+          md: '0px',
+          sm: '0px',
+          xs: '0px',
+        },
         display: 'flex',
         justifyContent: {
           xl: 'start',
@@ -26,13 +39,19 @@ const Header = () => {
           xs: 'center',
         },
         flexDirection: 'column',
-        paddingTop: { xs: '0px', sm: '3em' },
+        paddingTop: { xs: '0px', sm: '3em', md: '0em' },
       }}
     >
       <Box
         sx={{
           width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
-          height: { xl: '65%', lg: '80%', md: '80%', sm: '50vh', xs: '45vh' },
+          height: {
+            xl: '65vh',
+            lg: '80vh',
+            md: '30vh',
+            sm: '50vh',
+            xs: '45vh',
+          },
           display: 'flex',
           flexDirection: {
             xl: 'row',
@@ -60,7 +79,7 @@ const Header = () => {
             lg: '3em',
             md: '1em',
             sm: '2em',
-            xs: '4em',
+            xs: '2em',
           },
         }}
       >
