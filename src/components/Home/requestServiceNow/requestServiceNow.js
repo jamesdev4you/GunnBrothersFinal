@@ -11,7 +11,7 @@ const RequestServiceNow = () => {
         width: '100%',
         height: '22vh',
         backgroundColor: 'primary.main',
-        display: {xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none'}, 
+        display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none' },
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '2em',
@@ -67,10 +67,16 @@ const RequestServiceNow = () => {
           sx={{
             width: '100%',
             height: 'auto',
-            display: {xl: 'flex', lg: 'flex', md: 'none', sm: 'none', xs: 'none', },
+            display: {
+              xl: 'flex',
+              lg: 'flex',
+              md: 'none',
+              sm: 'none',
+              xs: 'none',
+            },
             alignItems: 'center',
             justifyContent: 'space-around',
-            marginBottom: {xl: '3em', lg: '0em'},
+            marginBottom: { xl: '1.5em', lg: '0em' },
           }}
         >
           <MyHoverButton children='Emergency Call' />
@@ -81,10 +87,16 @@ const RequestServiceNow = () => {
           sx={{
             width: '100%',
             height: 'auto',
-            display: {xl: 'none', lg: 'none', md: 'flex', sm: 'none', xs: 'none', },
+            display: {
+              xl: 'none',
+              lg: 'none',
+              md: 'flex',
+              sm: 'none',
+              xs: 'none',
+            },
             alignItems: 'center',
             justifyContent: 'space-around',
-            marginBottom: {xl: '3em', lg: '0em'},
+            marginBottom: { xl: '3em', lg: '0em' },
           }}
         >
           <MyHoverButton children='Call Today' />
