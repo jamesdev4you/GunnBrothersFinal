@@ -6,7 +6,7 @@ const InfoTextSection = () => {
   return (
     <Box
       sx={{
-        width: '50%',
+        width: {xl: '50%', lg: '50%', md: '50%', sm: '80%'},
         height: 'auto',
         display: 'flex',
       }}

@@ -50,7 +50,7 @@ const HeaderText = () => {
           display: {
             xl: 'flex',
             lg: 'flex',
-            md: 'none',
+            md: 'flex',
             sm: 'none',
             xs: 'none',
           },
@@ -66,7 +66,7 @@ const HeaderText = () => {
           display: {
             xl: 'none',
             lg: 'none',
-            md: 'flex',
+            md: 'none',
             sm: 'flex',
             xs: 'flex',
           },

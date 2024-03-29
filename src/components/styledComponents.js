@@ -104,7 +104,7 @@ const HoverButton = styled(Button)(({ theme }) => ({
   fontSize: '14px',
   fontWeight: '900',
   letterSpacing: '2px',
-  padding: '14px 50px 14px',
+  padding: '10px 50px 10px',
   outline: '0',
   cursor: 'pointer',
   color: theme.palette.text.primary,
@@ -135,11 +135,11 @@ const HoverButton = styled(Button)(({ theme }) => ({
   '&:hover': {
     backgroundColor: theme.palette.background.paper,
   },
-  [`@media (min-width: 1200px)`]: {
-    padding: '10px 30px 10px',
-  },
   [`@media (min-width: 992px`]: {
     padding: '10px 20px 10px',
+  },
+  [`@media (min-width: 1200px)`]: {
+    padding: '10px 30px 10px',
   },
 }));
 

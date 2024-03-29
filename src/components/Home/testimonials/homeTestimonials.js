@@ -13,15 +13,27 @@ const HomeTestimonials = () => {
   return (
     <Box
     sx={{
-      width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
-      height: '60vh',
+      width: { xl: '80%', lg: '80%', md: '90%', sm: '80%', xs: '100%' },
+      height: { xl: '60vh', lg: '60vh', md: '60vh', sm: 'auto', xs: 'auto' },
       display: 'flex',
-      marginLeft: 'auto',
+      flexDirection: { xl: 'row', lg: 'row', md: 'row', sm: 'column', xs: 'column' },
       backgroundColor: 'primary.main',
       borderBottomLeftRadius: '80px',
+      borderBottomRightRadius: { xl: '0px', lg: '0px', md: '0px', sm: '80px', xs: '80px' },
       position: 'relative',
     }}
   >
+            <Box
+        sx={{
+          height: {xl: '60vh', lg: '40vh', md: '40vh', sm: '40vh'},
+          width: '100%',
+          backgroundImage: `url(${Technician})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          display: {xl: 'none', lg: 'none', md: 'none', sm: 'flex', xs: 'flex'},
+        }}
+      />
     <Box sx={{margin: '3em', gap: '1em', display: 'flex', flexDirection: 'column', alignItems: 'start', justifyContent: 'center', width: '50%'}}>
         <Typography variant='h2' sx={{color: 'secondary.main'}}>
             Testimonials
@@ -86,7 +98,7 @@ const HomeTestimonials = () => {
         <MyHoverButton children='Emergency Call' />
         <Box
         sx={{
-          height: {xl: '60vh', lg: '50vh'},
+          height: {xl: '60vh', lg: '40vh', md: '40vh', sm: '40vh'},
           width: '35%',
           backgroundImage: `url(${Technician})`,
           backgroundSize: 'cover',
@@ -95,11 +107,12 @@ const HomeTestimonials = () => {
           position: 'absolute',
           right: '10px',
           bottom: '-20px',
+          display: {xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none'},
         }}
       />
       <Box
         sx={{
-          height: {xl: '60vh', lg: '40vh'},
+          height: {xl: '60vh', lg: '40vh', md: '40vh', sm: '40vh'},
           width: '30%',
           backgroundImage: `url(${Snowflake})`,
           backgroundSize: 'cover',

@@ -19,7 +19,6 @@ const HowCanButtons = () => {
       }}
     >
       <MyHoverButton children='Request Appointment' />
-      <MyHoverButton children='Emergency Call' />
       <Box
         sx={{
           display: 'flex',

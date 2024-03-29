@@ -59,13 +59,13 @@ const HowCanGrid = () => {
       columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 3 }}
     >
       {gridOptions.map((item) => (
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
           <Box
             key={item.key}
             onMouseEnter={() => setHovered(item.key)}
             onMouseLeave={() => setHovered(null)}
             sx={{
-              height: { xl: '40vh', lg: '38vh', md: '90%', sm: '100%', xs: '100%' },
+              height: { xl: '40vh', lg: '40vh', md: '40vh', sm: '15vh', xs: '100%' },
               backgroundColor: 'primary.main',
               borderColor: 'info.main',
               borderRadius: '15px',
@@ -73,9 +73,9 @@ const HowCanGrid = () => {
               borderStyle: 'solid',
               cursor: 'pointer',
               display: 'flex',
-              flexDirection: 'column',
+              flexDirection: {xl: 'column', lg: 'column', md: 'column', sm: 'row', xs: 'row'},
               alignItems: 'center',
-              justifyContent: 'center',
+              justifyContent: {xl: 'center', lg: 'center', md: 'center', sm: 'center', xs: 'center'},
               gap: '1em',
             }}
           >

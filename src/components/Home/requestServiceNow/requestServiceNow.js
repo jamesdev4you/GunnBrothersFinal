@@ -11,7 +11,7 @@ const RequestServiceNow = () => {
         width: '100%',
         height: '22vh',
         backgroundColor: 'primary.main',
-        display: 'flex',
+        display: {xl: 'flex', lg: 'flex', md: 'flex', sm: 'none', xs: 'none'}, 
         alignItems: 'center',
         justifyContent: 'center',
         paddingTop: '2em',
@@ -24,14 +24,14 @@ const RequestServiceNow = () => {
           width: {
             xl: '200px',
             lg: '150px',
-            md: '200px',
+            md: '150px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
             lg: '150px',
-            md: '200px',
+            md: '150px',
             sm: '200px',
             xs: '200px',
           },
@@ -67,7 +67,7 @@ const RequestServiceNow = () => {
           sx={{
             width: '100%',
             height: 'auto',
-            display: 'flex',
+            display: {xl: 'flex', lg: 'flex', md: 'none', sm: 'none', xs: 'none', },
             alignItems: 'center',
             justifyContent: 'space-around',
             marginBottom: {xl: '3em', lg: '0em'},
@@ -77,6 +77,18 @@ const RequestServiceNow = () => {
           <MyHoverButton children='Price Estimate' />
           <MyHoverButton children='Choose Service' />
         </Box>
+        <Box
+          sx={{
+            width: '100%',
+            height: 'auto',
+            display: {xl: 'none', lg: 'none', md: 'flex', sm: 'none', xs: 'none', },
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            marginBottom: {xl: '3em', lg: '0em'},
+          }}
+        >
+          <MyHoverButton children='Call Today' />
+        </Box>
       </Box>
       <Box
         sx={{
@@ -84,14 +96,14 @@ const RequestServiceNow = () => {
           width: {
             xl: '200px',
             lg: '150px',
-            md: '200px',
+            md: '150px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
             lg: '150px',
-            md: '200px',
+            md: '150px',
             sm: '200px',
             xs: '200px',
           },

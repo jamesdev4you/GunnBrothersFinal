@@ -182,7 +182,7 @@ const HeaderOptions = () => {
           },
           width: '100%',
           alignItems: 'center',
-          gap: { xs: '0em', sm: '4em' },
+          gap: { xs: '0em', sm: '0em' },
           justifyContent: 'center',
           backgroundColor: 'primary.main',
           paddingTop: {

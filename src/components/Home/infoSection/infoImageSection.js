@@ -9,8 +9,8 @@ const InfoImageSection = () => {
     <>
       <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '40%',
+          height: {xl: '60vh', lg: '60vh', md: '50vh', sm: '70vh'},
+          width: {xl: '40%', lg: '40%', md: '45%', sm: '80%'},
           border: '3px solid #B8DBD9',
           boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
           backgroundImage: `url(${Technician})`,

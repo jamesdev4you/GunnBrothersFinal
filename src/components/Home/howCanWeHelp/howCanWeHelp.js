@@ -8,7 +8,7 @@ const HowCanWeHelp = () => {
   return (
     <Box
       sx={{
-        width: { xl: '80%', lg: '70%', md: '90%', sm: '100%', xs: '100%' },
+        width: { xl: '80%', lg: '70%', md: '90%', sm: '80%', xs: '100%' },
         height: 'auto',
         display: 'flex',
         flexDirection: 'column',
