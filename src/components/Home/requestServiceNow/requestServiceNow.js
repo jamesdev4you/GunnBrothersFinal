@@ -23,14 +23,14 @@ const RequestServiceNow = () => {
           backgroundImage: `url(${Snowflake})`,
           width: {
             xl: '200px',
-            lg: '250px',
+            lg: '150px',
             md: '200px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
-            lg: '250px',
+            lg: '150px',
             md: '200px',
             sm: '200px',
             xs: '200px',
@@ -58,7 +58,7 @@ const RequestServiceNow = () => {
         }}
       >
         <Typography
-          variant='h1'
+          variant='h3'
           sx={{ color: 'secondary.main', marginBottom: 'auto' }}
         >
           Request Service Today
@@ -70,7 +70,7 @@ const RequestServiceNow = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-around',
-            marginBottom: '3em',
+            marginBottom: {xl: '3em', lg: '0em'},
           }}
         >
           <MyHoverButton children='Emergency Call' />
@@ -83,14 +83,14 @@ const RequestServiceNow = () => {
           backgroundImage: `url(${Snowflake})`,
           width: {
             xl: '200px',
-            lg: '250px',
+            lg: '150px',
             md: '200px',
             sm: '200px',
             xs: '200px',
           },
           height: {
             xl: '200px',
-            lg: '250px',
+            lg: '150px',
             md: '200px',
             sm: '200px',
             xs: '200px',

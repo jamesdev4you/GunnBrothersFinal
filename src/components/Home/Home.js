@@ -6,6 +6,7 @@ import RequestServiceNow from './requestServiceNow/requestServiceNow';
 import InfoSection from './infoSection/infoSection';
 import HowCanWeHelp from './howCanWeHelp/howCanWeHelp';
 import FAQ from './faq/faq';
+import HomeTestimonials from './testimonials/homeTestimonials';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <InfoSection />
       <HowCanWeHelp />
       <FAQ />
+      <HomeTestimonials />
     </Box>
   );
 };

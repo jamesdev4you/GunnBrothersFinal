@@ -65,7 +65,7 @@ const HowCanGrid = () => {
             onMouseEnter={() => setHovered(item.key)}
             onMouseLeave={() => setHovered(null)}
             sx={{
-              height: '40vh',
+              height: { xl: '40vh', lg: '50vh', md: '90%', sm: '100%', xs: '100%' },
               backgroundColor: 'primary.main',
               borderColor: 'info.main',
               borderRadius: '15px',
@@ -88,7 +88,7 @@ const HowCanGrid = () => {
                   xs: '30px',
                   sm: '60px',
                   md: hovered === item.key ? '50px' : '40px',
-                  lg: hovered === item.key ? '40px' : '35px',
+                  lg: hovered === item.key ? '100px' : '120px',
                   xl: hovered === item.key ? '120px' : '140px',
                 },
 
@@ -96,7 +96,7 @@ const HowCanGrid = () => {
                   xs: '30px',
                   sm: '60px',
                   md: hovered === item.key ? '50px' : '40px',
-                  lg: hovered === item.key ? '40px' : '35px',
+                  lg: hovered === item.key ? '100px' : '120px',
                   xl: hovered === item.key ? '120px' : '140px',
                 },
                 color: hovered === item.key ? 'info.main' : 'secondary.main',

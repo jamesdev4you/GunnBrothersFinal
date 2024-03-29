@@ -12,7 +12,7 @@ const FAQ = () => {
         alignItems: 'center',
         justifyContent: 'center',
         gap: '3em',
-        width: '60%',
+        width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
       }}
     >
       <Typography variant='h1' sx={{ fontWeight: 'bold' }}>
