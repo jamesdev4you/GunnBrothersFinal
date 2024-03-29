@@ -14,7 +14,7 @@ const HomeTestimonials = () => {
     <Box
     sx={{
       width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
-      height: '80vh',
+      height: '60vh',
       display: 'flex',
       marginLeft: 'auto',
       backgroundColor: 'primary.main',
@@ -86,8 +86,8 @@ const HomeTestimonials = () => {
         <MyHoverButton children='Emergency Call' />
         <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh'},
-          width: '40%',
+          height: {xl: '60vh', lg: '50vh'},
+          width: '35%',
           backgroundImage: `url(${Technician})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
@@ -107,7 +107,7 @@ const HomeTestimonials = () => {
           backgroundPosition: 'center',
           position: 'absolute',
           left: '30%',
-          bottom: '40%',
+          bottom: '20%',
           opacity: '.2'
         }}
       />

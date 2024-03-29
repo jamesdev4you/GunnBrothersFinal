@@ -44,21 +44,24 @@ const FAQGrid = () => {
           <Box
             sx={{
               display: 'flex',
-              height: '2em',
+              height: '4em',
               alignItems: 'center',
               justifyContent: 'space-between',
               backgroundColor: 'black',
               borderBottomRightRadius: '20px',
               padding: '1em',
               cursor: 'pointer',
+              borderColor: 'info.main',
+              borderWidth: '2px',
+              borderStyle: 'solid',
             }}
           >
-            <Typography variant='h5' sx={{ color: 'info.main' }}>
+            <Typography variant='h5' sx={{ color: 'secondary.main' }}>
               {item.question}
             </Typography>
             <Typography
               variant='h5'
-              sx={{ color: 'info.main', marginLeft: 'auto' }}
+              sx={{ color: 'secondary.main', marginLeft: 'auto' }}
             >
               {'>'}
             </Typography>

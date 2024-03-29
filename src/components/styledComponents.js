@@ -112,7 +112,7 @@ const HoverButton = styled(Button)(({ theme }) => ({
   backgroundColor: 'white',
   userSelect: 'none',
   touchAction: 'manipulation',
-  borderRadius: '11px',
+  borderRadius: '15px',
   fontFamily: 'Birds',
   '&:after': {
     content: '""',
@@ -129,8 +129,8 @@ const HoverButton = styled(Button)(({ theme }) => ({
   },
   '&:hover:after': {
     border: `2px solid ${theme.palette.info.main}`,
-    top: '-2px',
-    left: '-2px',
+    top: '0px',
+    left: '0px',
   },
   '&:hover': {
     backgroundColor: theme.palette.background.paper,

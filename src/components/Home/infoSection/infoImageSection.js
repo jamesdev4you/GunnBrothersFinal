@@ -9,7 +9,7 @@ const InfoImageSection = () => {
     <>
       <Box
         sx={{
-          height: {xl: '60vh', lg: '80vh'},
+          height: {xl: '60vh', lg: '60vh'},
           width: '40%',
           border: '3px solid #B8DBD9',
           boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',

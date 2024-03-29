@@ -42,8 +42,8 @@ const Header = () => {
           },
           justifyContent: {
             xl: 'space-between',
-            lg: 'center',
-            md: 'center',
+            lg: 'space-between',
+            md: 'space-between',
             sm: 'center',
             xs: 'center',
           },

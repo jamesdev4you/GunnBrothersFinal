@@ -5,18 +5,18 @@ a.nav_link:hover {
 
 .nav_link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav_links:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .menu_link {
   text-decoration: none;
-  color: #1b1e1e;
-  font-size: 20px;
+  color: white;
+  font-size: 14px;
   margin-left: 35px;
   text-align: left;
 }

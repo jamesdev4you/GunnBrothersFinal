@@ -7,6 +7,8 @@ import InfoSection from './infoSection/infoSection';
 import HowCanWeHelp from './howCanWeHelp/howCanWeHelp';
 import FAQ from './faq/faq';
 import HomeTestimonials from './testimonials/homeTestimonials';
+import Footer from '../Footer/footer';
+import Snowflake from '../../assets/pictures/snowflake.png';
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
         justifyContent: 'center',
         flexDirection: 'column',
         gap: '6em',
+        position: 'relative'
       }}
     >
       <Navbar />
@@ -29,6 +32,63 @@ const Home = () => {
       <HowCanWeHelp />
       <FAQ />
       <HomeTestimonials />
+      <Footer />
+      <Box
+        sx={{
+          height: {xl: '60vh', lg: '60vh'},
+          width: '30%',
+          backgroundImage: `url(${Snowflake})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          position: 'absolute',
+          left: '-20%',
+          bottom: '40%',
+          opacity: '.2'
+        }}
+      />
+            <Box
+        sx={{
+          height: {xl: '60vh', lg: '60vh'},
+          width: '30%',
+          backgroundImage: `url(${Snowflake})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          position: 'absolute',
+          right: '-20%',
+          bottom: '30%',
+          opacity: '.2'
+        }}
+      />
+                  <Box
+        sx={{
+          height: {xl: '60vh', lg: '60vh'},
+          width: '30%',
+          backgroundImage: `url(${Snowflake})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          position: 'absolute',
+          left: '-20%',
+          bottom: '10%',
+          opacity: '.2'
+        }}
+      />
+           <Box
+        sx={{
+          height: {xl: '60vh', lg: '60vh'},
+          width: '30%',
+          backgroundImage: `url(${Snowflake})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          position: 'absolute',
+          right: '-15%',
+          bottom: '65%',
+          opacity: '.2'
+        }}
+      />
     </Box>
   );
 };

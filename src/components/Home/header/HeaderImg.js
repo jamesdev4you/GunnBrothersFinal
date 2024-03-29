@@ -9,7 +9,7 @@ const HeaderImg = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: { xl: '40%', lg: '800px', md: '800px', sm: '90%', xs: '100%' },
+        width: { xl: '40%', lg: 'auto', md: 'auto', sm: '90%', xs: '100%' },
         height: {
           xl: '350px',
           lg: '250px',

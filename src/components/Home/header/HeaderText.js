@@ -7,7 +7,7 @@ const HeaderText = () => {
   return (
     <Box
       sx={{
-        width: { xl: '50%', lg: '100%', md: '100%', sm: '90%', xs: '100%' },
+        width: { xl: '50%', lg: '50%', md: '60%', sm: '90%', xs: '100%' },
         height: 'auto',
         display: 'flex',
         flexDirection: 'column',
