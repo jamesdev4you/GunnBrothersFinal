@@ -36,8 +36,8 @@ export default function NavBar() {
       onClick={handleDrawerToggle}
       sx={{ textAlign: 'center', backgroundColor: 'primary.main' }}
     >
-      <img src={Logo} alt='yooo' style={{ height: '200px', width: '150px' }} />
-      
+      <img src={Logo} alt='yooo' style={{ height: '145px', width: '150px' }} />
+
       <List sx={{ backgroundColor: 'primary.main' }}>
         {navItems.map((item) => (
           <ListItem key={item.text} sx={{ margin: '15px 0px' }} disablePadding>
@@ -47,7 +47,7 @@ export default function NavBar() {
                 color: 'white',
                 fontSize: '20px',
                 marginRight: 'auto',
-                marginLeft: '1em'
+                marginLeft: '1em',
               }}
               to={item.href}
             >
@@ -104,7 +104,7 @@ export default function NavBar() {
                 lg: '0px',
                 xl: '550px',
               },
-              margin: 'auto'
+              margin: 'auto',
             }}
           >
             {navItems.map((item) => (
