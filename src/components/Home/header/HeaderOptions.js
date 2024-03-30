@@ -62,7 +62,7 @@ const HeaderOptions = () => {
     <Box
       sx={{
         width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
-        height: { xl: '35vh', lg: '20vh', md: '30vh', sm: '50vh', xs: '55vh' },
+        height: { xl: '35vh', lg: '20%', md: '20%', sm: '10%', xs: '50%' },
         paddingTop: { xs: '6em', sm: '4em', md: '0em', lg: '0em', xl: '0em' },
         paddingBottom: '2em',
         display: 'flex',

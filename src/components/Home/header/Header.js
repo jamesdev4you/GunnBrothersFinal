@@ -11,10 +11,10 @@ const Header = () => {
         width: { xl: '70%', lg: '100%', md: '100%', sm: '100%', xs: '100%' },
         height: {
           xl: '60vh',
-          lg: '50vh',
-          md: '60vh',
-          sm: '100vh',
-          xs: '100vh',
+          lg: '28em',
+          md: '25em',
+          sm: '45em',
+          xs: '90vh',
         },
         gap: {
           xl: '0px',
@@ -39,7 +39,7 @@ const Header = () => {
           xs: 'center',
         },
         flexDirection: 'column',
-        paddingTop: { xs: '0px', sm: '3em', md: '0em' },
+        paddingTop: { xs: '0px', sm: '1em', md: '0em' },
       }}
     >
       <Box
@@ -47,10 +47,10 @@ const Header = () => {
           width: { xl: '80%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
           height: {
             xl: '65vh',
-            lg: '80vh',
-            md: '30vh',
-            sm: '50vh',
-            xs: '45vh',
+            lg: '80%',
+            md: '80%',
+            sm: '90%',
+            xs: '50%',
           },
           display: 'flex',
           flexDirection: {
