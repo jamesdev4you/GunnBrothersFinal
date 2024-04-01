@@ -17,11 +17,12 @@ a.nav_link:hover {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  margin-left: 35px;
-  text-align: left;
+  text-align: center;
+  margin: 15px 0px;
 }
 
 a.menu_link:hover {
   cursor: pointer;
   color: #c2ad90;
+  text-decoration: underline;
 }
