@@ -18,11 +18,10 @@ a.nav_link:hover {
   color: white;
   font-size: 14px;
   text-align: center;
-  margin: 15px 0px;
 }
 
 a.menu_link:hover {
   cursor: pointer;
-  color: #c2ad90;
+  color: #b8dbd9;
   text-decoration: underline;
 }

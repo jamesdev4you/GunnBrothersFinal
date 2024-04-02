@@ -165,6 +165,15 @@ export default function NavBar() {
                           <Button
                             variant='contained'
                             {...bindTrigger(popupState)}
+                            sx={{
+                              '&.MuiButton-root': {
+                                color: 'white',
+                                '&:hover': {
+                                  color: '#B8DBD9',
+                                  textDecoration: 'underline',
+                                },
+                              },
+                            }}
                           >
                             {item.text}
                           </Button>
@@ -177,7 +186,7 @@ export default function NavBar() {
                             }}
                             sx={{
                               '& .MuiPaper-root': {
-                                backgroundColor: 'black', // Background color of the menu
+                                backgroundColor: 'black',
                               },
                             }}
                           >
@@ -194,13 +203,7 @@ export default function NavBar() {
                               >
                                 <NavLink
                                   to={dropdownItem.href}
-                                  style={{
-                                    textDecoration: 'none',
-                                    color: 'white',
-                                    fontSize: '14px',
-                                    marginRight: 'auto',
-                                    fontFamily: 'Roboto',
-                                  }}
+                                  className='menu_link'
                                 >
                                   {dropdownItem.text}
                                 </NavLink>
