@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import NavBar from '../Navbar/Navbar';
 import AboutHeader from './aboutHeader/AboutHeader';
 import AboutSignUp from './aboutSignUp/AboutSignUp';
+import AboutBlogs from './aboutBlogs/AboutBlogs';
+import FAQ from '../Home/faq/faq';
 import Footer from '../Footer/footer';
 
 const About = () => {
@@ -24,6 +26,8 @@ const About = () => {
       <NavBar />
       <AboutHeader />
       <AboutSignUp />
+      <AboutBlogs />
+      <FAQ />
       <Footer />
     </Box>
   );
