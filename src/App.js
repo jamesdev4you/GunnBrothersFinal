@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 const theme = createTheme({
   palette: {
@@ -64,6 +65,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>
