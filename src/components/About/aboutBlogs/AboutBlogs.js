@@ -7,9 +7,9 @@ const AboutBlogs = () => {
   return (
     <Box
       sx={{
-        width: { xl: '70%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
+        width: { xl: '60%', lg: '80%', md: '90%', sm: '100%', xs: '100%' },
         height: {
-          xl: '65vh',
+          xl: 'auto',
           lg: '80%',
           md: '80%',
           sm: '90%',
@@ -32,7 +32,7 @@ const AboutBlogs = () => {
           xs: 'center',
         },
         gap: {
-          xl: '0em',
+          xl: '3em',
           lg: '3em',
           md: '1em',
           sm: '2em',
