@@ -3,6 +3,9 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Blog from './components/Blogs/Blog';
+import SingleBlog from './components/Blogs/singleBlog/SingleBlog';
+import CategoryBlogs from './components/Blogs/categoryBlogs/CategoryBlogs';
 
 const theme = createTheme({
   palette: {
@@ -66,6 +69,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/blog' element={<Blog> </Blog>} />
+        <Route path='/blog/:slug' element={<SingleBlog> </SingleBlog>} />{' '}
+        <Route
+          path='/blog/category/:categorySlug'
+          element={<CategoryBlogs> </CategoryBlogs>}
+        />{' '}
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>
