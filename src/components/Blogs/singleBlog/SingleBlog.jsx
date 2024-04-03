@@ -123,6 +123,8 @@ function SingleBlog() {
     },
   ];
 
+  console.log(DataStorage[0].object[1].slug.current);
+
   return (
     <Box
       sx={{ display: 'flex', alignItems: 'start', justifyContent: 'center' }}

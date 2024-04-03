@@ -243,7 +243,7 @@ function SingleBlogContent(props) {
                 height: '35px',
                 color: 'primary.main',
               }}
-              onClick={() => navigate(`/blog/${item.object[1].slug.current}`)}
+              onClick={() => navigate(`/blog/${item?.slug?.current}`)}
             >
               Read Today
             </Button>
