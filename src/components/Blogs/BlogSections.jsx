@@ -37,7 +37,7 @@ function BlogSections(props) {
                 sm: '90%',
                 xs: '95%',
               },
-              backgroundColor: 'white',
+              backgroundColor: 'primary.main',
               marginBottom: '3em',
               marginTop: '3em',
             }}
@@ -54,7 +54,7 @@ function BlogSections(props) {
                 xs: '95%',
               },
               textAlign: 'center',
-              color: 'white',
+              color: 'primary.main',
               fontWeight: 'bold',
             }}
           >
@@ -78,7 +78,7 @@ function BlogSections(props) {
                 xs: '95%',
               },
               textAlign: 'center',
-              color: 'white',
+              color: 'primary.main',
               margin: '1em 0em',
             }}
           >
@@ -109,7 +109,9 @@ function BlogSections(props) {
               justifyContent: 'center',
               boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
               backgroundColor: 'white',
-              border: '2px solid white',
+              borderSize: '2px',
+              borderStyle: 'solid',
+              borderColor: 'primary.main',
             }}
           >
             <Box
@@ -129,7 +131,9 @@ function BlogSections(props) {
                 backgroundPosition: 'center',
                 borderTopRightRadius: '10px',
                 borderTopLeftRadius: '10px',
-                borderBottom: '2px solid white',
+                borderBottomSize: '2px',
+                borderBottomStyle: 'solid',
+                borderBottomColor: 'primary.main',
               }}
             />
             <Box
@@ -139,7 +143,7 @@ function BlogSections(props) {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1em',
-                backgroundColor: '#224675ff',
+                backgroundColor: 'primary.main',
                 borderBottomRightRadius: '13px',
                 borderBottomLeftRadius: '13px',
               }}
@@ -154,7 +158,7 @@ function BlogSections(props) {
                     sm: '1em',
                     xs: '.7em',
                   },
-                  color: 'white',
+                  color: 'secondary.main',
                   fontWeight: 'bold',
                   width: '70%',
                 }}
@@ -173,7 +177,7 @@ function BlogSections(props) {
                   marginRight: '1em',
                   width: '150px',
                   height: '35px',
-                  color: '#224675ff',
+                  color: 'primary.main',
                 }}
                 onClick={() => navigate(`/blog/${item.object[0].slug.current}`)}
               >
@@ -227,9 +231,11 @@ function BlogSections(props) {
                 display: 'flex',
                 alignItems: 'start',
                 justifyContent: 'center',
-                border: '2px solid white',
+                borderSize: '2px',
+                borderStyle: 'solid',
+                borderColor: 'primary.main',
                 boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-                backgroundColor: '#224776',
+                backgroundColor: 'primary.main',
               }}
             >
               <Box
@@ -247,7 +253,9 @@ function BlogSections(props) {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'none',
                   backgroundPosition: 'center',
-                  borderBottom: '2px solid white',
+                  borderBottomSize: '2px',
+                  borderBottomStyle: 'solid',
+                  borderBottomColor: 'primary.main',
                   borderTopRightRadius: '15px',
                   borderTopLeftRadius: '15px',
                 }}
@@ -259,7 +267,7 @@ function BlogSections(props) {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '1em',
-                  backgroundColor: '#224675ff',
+                  backgroundColor: 'primary.main',
                   borderBottomRightRadius: '13px',
                   borderBottomLeftRadius: '13px',
                 }}
@@ -274,7 +282,7 @@ function BlogSections(props) {
                       sm: '1em',
                       xs: '.7em',
                     },
-                    color: 'white',
+                    color: 'secondary.main',
                     fontWeight: 'bold',
                     width: '70%',
                   }}
@@ -293,7 +301,7 @@ function BlogSections(props) {
                     marginRight: '1em',
                     width: '150px',
                     height: '35px',
-                    color: '#224675ff',
+                    color: 'primary.main',
                   }}
                   onClick={() =>
                     navigate(`/blog/${item.object[1].slug.current}`)
@@ -325,9 +333,11 @@ function BlogSections(props) {
                 display: 'flex',
                 alignItems: 'start',
                 justifyContent: 'center',
-                border: '2px solid white',
+                borderSize: '2px',
+                borderStyle: 'solid',
+                borderColor: 'primary.main',
                 boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-                backgroundColor: '#224776',
+                backgroundColor: 'primary.main',
               }}
             >
               <Box
@@ -345,7 +355,9 @@ function BlogSections(props) {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'none',
                   backgroundPosition: 'center',
-                  borderBottom: '2px solid white',
+                  borderBottomSize: '2px',
+                  borderBottomStyle: 'solid',
+                  borderBottomColor: 'primary.main',
                   borderTopRightRadius: '15px',
                   borderTopLeftRadius: '15px',
                 }}
@@ -357,7 +369,7 @@ function BlogSections(props) {
                   display: 'flex',
                   alignItems: 'center',
                   gap: '1em',
-                  backgroundColor: '#224675ff',
+                  backgroundColor: 'primary.main',
                   borderBottomRightRadius: '13px',
                   borderBottomLeftRadius: '13px',
                 }}
@@ -392,7 +404,7 @@ function BlogSections(props) {
                     marginRight: '1em',
                     width: '150px',
                     height: '35px',
-                    color: '#224675ff',
+                    color: 'primary.main',
                   }}
                   onClick={() =>
                     navigate(`/blog/${item.object[2].slug.current}`)

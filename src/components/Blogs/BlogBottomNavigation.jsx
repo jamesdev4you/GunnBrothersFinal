@@ -42,7 +42,7 @@ function BlogBottomNavigation(props) {
               '& .MuiBottomNavigationAction-label': {
                 color: 'white',
                 '&:hover': {
-                  color: 'gold',
+                  color: '#B8DBD9',
                 },
               },
             }}

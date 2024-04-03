@@ -17,7 +17,7 @@ function BlogForm() {
             sm: '90%',
             xs: '95%',
           },
-          backgroundColor: 'white',
+          backgroundColor: 'primary.main',
           marginBottom: '3em',
           marginTop: '3em',
         }}
@@ -33,7 +33,7 @@ function BlogForm() {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           fontWeight: 'bold',
           marginBottom: '1em',
         }}
@@ -72,7 +72,7 @@ function BlogForm() {
         <TextField
           // eslint-disable-next-line react/jsx-props-no-multi-spaces
           label='Email'
-          color='primary'
+          color='secondary'
           sx={{
             width: {
               xl: '20%',
@@ -82,30 +82,30 @@ function BlogForm() {
               xs: '80%',
             },
             '& label.Mui-focused': {
-              color: 'gold',
+              color: '#B8DBD9',
             },
             '& .MuiFormLabel-root': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiFormLabel-root.Mui-focused': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiInput-underline:after': {
-              borderBottomColor: 'gold',
+              borderBottomColor: '#B8DBD9',
             },
             '& .MuiOutlinedInput-root': {
               '& fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&:hover fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&.Mui-focused fieldset': {
-                borderColor: 'gold',
+                borderColor: '#B8DBD9',
               },
             },
             '& .MuiInputBase-root': {
-              color: 'white',
+              color: 'black',
             },
           }}
         />
@@ -122,30 +122,30 @@ function BlogForm() {
               xs: '80%',
             },
             '& label.Mui-focused': {
-              color: 'gold',
+              color: '#B8DBD9',
             },
             '& .MuiFormLabel-root': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiFormLabel-root.Mui-focused': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiInput-underline:after': {
-              borderBottomColor: 'gold',
+              borderBottomColor: '#B8DBD9',
             },
             '& .MuiOutlinedInput-root': {
               '& fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&:hover fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&.Mui-focused fieldset': {
-                borderColor: 'gold',
+                borderColor: '#B8DBD9',
               },
             },
             '& .MuiInputBase-root': {
-              color: 'white',
+              color: 'black',
             },
           }}
         />
@@ -163,36 +163,36 @@ function BlogForm() {
               xs: '80%',
             },
             '& label.Mui-focused': {
-              color: 'gold',
+              color: '#B8DBD9',
             },
             '& .MuiFormLabel-root': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiFormLabel-root.Mui-focused': {
-              color: 'white',
+              color: 'black',
             },
             '& .MuiInput-underline:after': {
-              borderBottomColor: 'gold',
+              borderBottomColor: '#B8DBD9',
             },
             '& .MuiOutlinedInput-root': {
               '& fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&:hover fieldset': {
-                borderColor: 'white',
+                borderColor: 'black',
               },
               '&.Mui-focused fieldset': {
-                borderColor: 'gold',
+                borderColor: '#B8DBD9',
               },
             },
             '& .MuiInputBase-root': {
-              color: 'white',
+              color: 'black',
             },
           }}
         />
         <Button
           variant='contained'
-          color='secondary'
+          color='primary'
           sx={{
             alignSelf: 'center',
             minWidth: '140px',
@@ -212,7 +212,7 @@ function BlogForm() {
             sm: '90%',
             xs: '95%',
           },
-          backgroundColor: 'white',
+          backgroundColor: 'primary.main',
           marginBottom: '3em',
           marginTop: '3em',
         }}

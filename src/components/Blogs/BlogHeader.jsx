@@ -68,12 +68,11 @@ function BlogHeader(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           fontWeight: 'bold',
         }}
       >
-        <span style={{ color: '#ffbe0aff' }}>Des</span>
-        Blogs
+        GunnBlogs
       </Typography>
       <Typography
         variant='h4'
@@ -86,11 +85,11 @@ function BlogHeader(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           marginBottom: '.5em',
         }}
       >
-        Learn everything about unlocking phones.
+        Learn everything about HVAC & Insulation.
       </Typography>
       <Carousel
         animation='slide'
@@ -134,7 +133,9 @@ function BlogHeader(props) {
               display: 'flex',
               flexDirection: 'column',
               borderRadius: '10px',
-              border: '2px solid white',
+              borderSize: '2px',
+              borderStyle: 'solid',
+              borderColor: 'primary.main',
               boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
               p: 4,
             }}
@@ -142,9 +143,11 @@ function BlogHeader(props) {
           >
             <Box
               sx={{
-                backgroundColor: '#224675ff',
+                backgroundColor: 'primary.main',
                 borderRadius: '15px',
-                border: '3px solid #ffbe0aff',
+                borderSize: '2px',
+                borderStyle: 'solid',
+                borderColor: 'info.main',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -162,7 +165,11 @@ function BlogHeader(props) {
             >
               <Typography
                 variant='h5'
-                sx={{ color: 'white', fontWeight: 'bold', textAlign: 'center' }}
+                sx={{
+                  color: 'secondary.main',
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                }}
               >
                 {item.title ?? 'Loading...'}
               </Typography>

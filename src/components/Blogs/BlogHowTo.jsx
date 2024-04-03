@@ -18,7 +18,7 @@ function BlogHowTo(props) {
             sm: '90%',
             xs: '95%',
           },
-          backgroundColor: 'white',
+          backgroundColor: 'primary.main',
           marginBottom: '3em',
           marginTop: '3em',
         }}
@@ -34,11 +34,11 @@ function BlogHowTo(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           fontWeight: 'bold',
         }}
       >
-        {props.HowToData[0].title}
+        {props?.HowToData[0]?.title}
       </Typography>
       <Typography
         variant='h6'
@@ -51,11 +51,11 @@ function BlogHowTo(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           margin: '1em 0em',
         }}
       >
-        {props.HowToData[0].firstP}
+        {props?.HowToData[0]?.firstP}
       </Typography>
       <Typography
         variant='h6'
@@ -68,21 +68,23 @@ function BlogHowTo(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           margin: '1em 0em',
           display: change === true ? 'inline' : 'none',
         }}
       >
-        {props.HowToData[0].secondP}
+        {props?.HowToData[0]?.secondP}
       </Typography>
       <Typography
         variant='h4'
         sx={{
-          color: 'white',
+          color: 'primary.main',
           cursor: 'pointer',
           '&:hover': { color: 'gold', borderBottom: '1px solid gold' },
           transition: 'ease-in-out .35s',
-          borderBottom: '1px solid white',
+          borderBottomSize: '2px',
+          borderBottomStyle: 'solid',
+          borderBottomColor: 'primary.main',
         }}
         onClick={() => setChange(!change)}
       >

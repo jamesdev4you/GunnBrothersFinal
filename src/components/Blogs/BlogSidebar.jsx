@@ -30,8 +30,10 @@ function BlogSidebar(props) {
     >
       <Box
         sx={{
-          backgroundColor: '#224675ff',
-          borderRight: '1px solid white',
+          backgroundColor: 'primary.main',
+          borderRightSize: '2px',
+          borderRightStyle: 'solid',
+          borderRightColor: 'white',
           width: {
             xs: '0%',
             sm: '0%',
@@ -59,7 +61,7 @@ function BlogSidebar(props) {
         <Typography
           variant='h5'
           sx={{
-            '&:hover': { cursor: 'pointer', color: 'gold' },
+            '&:hover': { cursor: 'pointer', color: 'info.main' },
             transition: 'ease-in-out .2s',
             fontWeight: 'bold',
             textAlign: 'center',
@@ -98,8 +100,8 @@ function BlogSidebar(props) {
             sx={{
               color: 'white',
               cursor: 'pointer',
-              '&:hover': { color: 'gold' },
-              transition: 'ease-in-out .2s',
+              '&:hover': { color: '#B8DBD9' },
+              transition: 'ease-in-out .05s',
               gap: '15px',
               display: 'flex',
               alignItems: 'center',
