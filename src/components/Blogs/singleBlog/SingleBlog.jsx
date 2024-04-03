@@ -68,7 +68,7 @@ function SingleBlog() {
     {
       icon: (
         <AutoStoriesIcon
-          sx={{ color: 'white', '&:hover': { color: 'gold ' } }}
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
         />
       ),
       object: topStories,
@@ -81,7 +81,9 @@ function SingleBlog() {
     },
     {
       icon: (
-        <TimerIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <TimerIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: recentPosts,
       name: 'Recent Posts',
@@ -93,7 +95,9 @@ function SingleBlog() {
     },
     {
       icon: (
-        <SchoolIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <SchoolIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: educationalPosts,
       name: 'Education',
@@ -104,7 +108,11 @@ function SingleBlog() {
       title3: 'New Way To Flow',
     },
     {
-      icon: <PaidIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />,
+      icon: (
+        <PaidIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
+      ),
       object: moneySavingTips,
       name: 'Money Saving',
       href: '/moneysaving',

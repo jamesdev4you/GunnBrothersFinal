@@ -57,12 +57,11 @@ function SingleBlogHeader() {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           fontWeight: 'bold',
         }}
       >
-        <span style={{ color: '#ffbe0aff' }}>Des</span>
-        Blogs
+        GunnBlogs
       </Typography>
       <Typography
         variant='h4'
@@ -75,11 +74,11 @@ function SingleBlogHeader() {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           marginBottom: '1em',
         }}
       >
-        Learn everything about unlocking phones.
+        Learn everything about HVAC & Insulation.
       </Typography>
       <Box
         sx={{
@@ -91,7 +90,7 @@ function SingleBlogHeader() {
             sm: '90%',
             xs: '95%',
           },
-          backgroundColor: 'white',
+          backgroundColor: 'primary.main',
           marginBottom: '1em',
           marginTop: '1em',
         }}

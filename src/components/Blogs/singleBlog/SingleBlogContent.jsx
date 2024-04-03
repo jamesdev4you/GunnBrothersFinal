@@ -21,13 +21,17 @@ function SingleBlogContent(props) {
   return (
     <>
       <Typography
-        variant="h5"
+        variant='h5'
         sx={{
           width: {
-            xl: '80%', lg: '80%', md: '80%', sm: '90%', xs: '95%',
+            xl: '80%',
+            lg: '80%',
+            md: '80%',
+            sm: '90%',
+            xs: '95%',
           },
           textAlign: 'center',
-          color: '#e0a83fff',
+          color: 'primary.main',
           fontWeight: 'bold',
           margin: '1em 0em .5em',
         }}
@@ -35,55 +39,78 @@ function SingleBlogContent(props) {
         {props.SingleBlogContent[0]?.categories[0]?.title}
       </Typography>
       <Typography
-        variant="h3"
+        variant='h3'
         sx={{
           width: {
-            xl: '80%', lg: '80%', md: '80%', sm: '90%', xs: '95%',
+            xl: '80%',
+            lg: '80%',
+            md: '80%',
+            sm: '90%',
+            xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           margin: '.1em 0em .6em',
         }}
       >
         {props.SingleBlogContent[0]?.title}
       </Typography>
-      <Box sx={{
-        height: '40vh',
-        width: {
-          xl: '70%', lg: '70%', md: '70%', sm: '90%', xs: '90%',
-        },
-        // eslint-disable-next-line no-underscore-dangle
-        backgroundImage: `url(${
+      <Box
+        sx={{
+          height: '40vh',
+          width: {
+            xl: '70%',
+            lg: '70%',
+            md: '70%',
+            sm: '90%',
+            xs: '90%',
+          },
           // eslint-disable-next-line no-underscore-dangle
-          props.SingleBlogContent[0]?.mainImage?.asset?._ref
-          // eslint-disable-next-line max-len, no-underscore-dangle
-            ? urlFor(props.SingleBlogContent[0].mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
-            : placeholderImageUrl // Fallback URL or keep as an empty string
-        })`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'none',
-        backgroundPosition: 'center',
-        marginBottom: '2em',
-        borderRadius: '10px',
-        border: '2px solid #e0a83fff',
-      }}
+          backgroundImage: `url(${
+            // eslint-disable-next-line no-underscore-dangle
+            props.SingleBlogContent[0]?.mainImage?.asset?._ref
+              ? // eslint-disable-next-line max-len, no-underscore-dangle
+                urlFor(props.SingleBlogContent[0].mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
+              : placeholderImageUrl // Fallback URL or keep as an empty string
+          })`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'none',
+          backgroundPosition: 'center',
+          marginBottom: '2em',
+          borderRadius: '10px',
+          borderSize: '2px',
+          borderStyle: 'solid',
+          borderColor: 'info.main',
+        }}
       />
       {props.SingleBlogContent[0]?.body?.map((item) => (
-        <Box sx={{
-          width: {
-            xl: '70%', lg: '70%', md: '70%', sm: '90%', xs: '90%',
-          },
-        }}
-        >
-          <Box sx={{
-            width: '5%', maxWidth: '10px', height: '1px', backgroundColor: 'white', marginRight: 'auto', marginTop: '.5em', marginBottom: '.5em',
+        <Box
+          sx={{
+            width: {
+              xl: '70%',
+              lg: '70%',
+              md: '70%',
+              sm: '90%',
+              xs: '90%',
+            },
           }}
+        >
+          <Box
+            sx={{
+              width: '5%',
+              maxWidth: '10px',
+              height: '1px',
+              backgroundColor: 'primary.main',
+              marginRight: 'auto',
+              marginTop: '.5em',
+              marginBottom: '.5em',
+            }}
           />
           <Typography
-            variant="h6"
+            variant='h6'
             sx={{
               textAlign: 'left',
-              color: 'white',
+              color: 'primary.main',
               fontWeight: 'bold',
               marginBottom: '.5em',
             }}
@@ -92,39 +119,55 @@ function SingleBlogContent(props) {
           </Typography>
         </Box>
       ))}
-      <Box sx={{
-        height: '1px',
-        width: {
-          xl: '80%', lg: '80%', md: '80%', sm: '90%', xs: '95%',
-        },
-        backgroundColor: 'white',
-        marginBottom: '3em',
-        marginTop: '3em',
-      }}
+      <Box
+        sx={{
+          height: '1px',
+          width: {
+            xl: '80%',
+            lg: '80%',
+            md: '80%',
+            sm: '90%',
+            xs: '95%',
+          },
+          backgroundColor: 'white',
+          marginBottom: '3em',
+          marginTop: '3em',
+        }}
       />
       <Typography
-        variant="h5"
+        variant='h5'
         sx={{
           width: {
-            xl: '70%', lg: '70%', md: '70%', sm: '90%', xs: '90%',
+            xl: '70%',
+            lg: '70%',
+            md: '70%',
+            sm: '90%',
+            xs: '90%',
           },
           textAlign: 'left',
-          color: '#e0a83fff',
+          color: 'primary.main',
           fontWeight: 'bold',
           marginBottom: '1em',
         }}
       >
-        Top Stories!
-        {' '}
+        Top Stories!{' '}
       </Typography>
       {props.TopStories.map((item) => (
         <Box
           sx={{
             width: {
-              xl: '70%', lg: '70%', md: '70%', sm: '90%', xs: '90%',
+              xl: '70%',
+              lg: '70%',
+              md: '70%',
+              sm: '90%',
+              xs: '90%',
             },
             height: {
-              xl: '55vh', lg: '55vh', md: '55vh', sm: '55vh', xs: '55vh',
+              xl: '55vh',
+              lg: '55vh',
+              md: '55vh',
+              sm: '55vh',
+              xs: '55vh',
             },
             marginBottom: '4em',
             borderRadius: '15px',
@@ -132,67 +175,73 @@ function SingleBlogContent(props) {
             display: 'flex',
             alignItems: 'start',
             justifyContent: 'center',
-            border: '2px solid white',
+            borderSize: '2px',
+            borderStyle: 'solid',
+            borderColor: 'primary.main',
             boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
             backgroundColor: '#224776',
           }}
         >
-          <Box sx={{
-            height: '85%',
-            width: '100%',
-            // eslint-disable-next-line no-underscore-dangle
-            backgroundImage: `url(${
+          <Box
+            sx={{
+              height: '85%',
+              width: '100%',
               // eslint-disable-next-line no-underscore-dangle
-              item.mainImage?.asset?._ref
-              // eslint-disable-next-line max-len, no-underscore-dangle
-                ? urlFor(item.mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
-                : placeholderImageUrl // Fallback URL or keep as an empty string
-            })`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'none',
-            backgroundPosition: 'center',
-            borderBottom: '2px solid white',
-            borderTopRightRadius: '15px',
-            borderTopLeftRadius: '15px',
-          }}
+              backgroundImage: `url(${
+                // eslint-disable-next-line no-underscore-dangle
+                item.mainImage?.asset?._ref
+                  ? // eslint-disable-next-line max-len, no-underscore-dangle
+                    urlFor(item.mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
+                  : placeholderImageUrl // Fallback URL or keep as an empty string
+              })`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'none',
+              backgroundPosition: 'center',
+              borderBottomSize: '2px',
+              borderBottomStyle: 'solid',
+              borderBottomColor: 'primary.main',
+              borderTopRightRadius: '15px',
+              borderTopLeftRadius: '15px',
+            }}
           />
-          <Box sx={{
-            height: '15%',
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '1em',
-            backgroundColor: '#224675ff',
-            borderBottomRightRadius: '13px',
-            borderBottomLeftRadius: '13px',
-          }}
+          <Box
+            sx={{
+              height: '15%',
+              width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1em',
+              backgroundColor: 'primary.main',
+              borderBottomRightRadius: '13px',
+              borderBottomLeftRadius: '13px',
+            }}
           >
             <Typography
-              variant="h6"
+              variant='h6'
               sx={{
                 marginLeft: {
-                  xl: '1em', lg: '1em', md: '.4em', sm: '1em', xs: '.7em',
+                  xl: '1em',
+                  lg: '1em',
+                  md: '.4em',
+                  sm: '1em',
+                  xs: '.7em',
                 },
                 color: 'white',
                 fontWeight: 'bold',
                 width: '70%',
               }}
             >
-              {item.title ? (
-                <>
-                  {item.title}
-                  {' '}
-
-                </>
-              ) : (
-                'loading...'
-              )}
+              {item.title ? <>{item.title} </> : 'loading...'}
             </Typography>
             <Button
-              variant="contained"
-              color="secondary"
+              variant='contained'
+              color='secondary'
               sx={{
-                marginLeft: 'auto', marginRight: '1em', width: '150px', height: '35px', color: '#224675ff',
+                marginLeft: 'auto',
+                marginRight: '1em',
+                width: '150px',
+                height: '35px',
+                color: 'primary.main',
               }}
               onClick={() => navigate(`/blog/${item.object[1].slug.current}`)}
             >
@@ -200,7 +249,6 @@ function SingleBlogContent(props) {
             </Button>
           </Box>
         </Box>
-
       ))}
     </>
   );

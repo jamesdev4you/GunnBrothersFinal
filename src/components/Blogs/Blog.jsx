@@ -14,6 +14,7 @@ import BlogHowTo from './BlogHowTo';
 import BlogSections from './BlogSections';
 import BlogForm from './BlogForm';
 import BlogBottomNavigation from './BlogBottomNavigation';
+import Footer from '../Footer/footer';
 import client from '../../sanityClient';
 
 function Blog() {
@@ -77,7 +78,7 @@ function Blog() {
     {
       icon: (
         <AutoStoriesIcon
-          sx={{ color: 'white', '&:hover': { color: 'gold ' } }}
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
         />
       ),
       object: topStories,
@@ -93,7 +94,9 @@ function Blog() {
     },
     {
       icon: (
-        <TimerIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <TimerIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: recentPosts,
       fxn: executeRecentPosts,
@@ -108,7 +111,9 @@ function Blog() {
     },
     {
       icon: (
-        <SchoolIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <SchoolIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: educationalPosts,
       fxn: executeEducational,
@@ -122,7 +127,11 @@ function Blog() {
       ref: myEducational,
     },
     {
-      icon: <PaidIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />,
+      icon: (
+        <PaidIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
+      ),
       object: moneySavingTips,
       fxn: executeMoneySavingTips,
       name: 'Saving',
@@ -136,49 +145,52 @@ function Blog() {
     },
   ];
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        alignItems: 'start',
-        justifyContent: 'center',
-      }}
-    >
-      <Navbar />
-      <BlogSidebar HeaderNavigationMenu={DataStorage} />
+    <>
       <Box
         sx={{
-          height: 'auto',
-          width: {
-            xs: '100%',
-            sm: '100%',
-            md: '90%',
-            lg: '90%',
-            xl: '90%',
-          },
           display: 'flex',
-          alignItems: 'center',
-          jusitfyContent: 'center',
-          flexDirection: 'column',
-          marginTop: '8em',
-          position: {
-            xs: 'absolute',
-            sm: 'absolute',
-            md: 'relative',
-            lg: 'relative',
-            xl: 'relative',
-          },
+          alignItems: 'start',
+          justifyContent: 'center',
         }}
       >
-        <BlogHeader
-          HeaderNavigationMenu={DataStorage}
-          HeaderCarouselItems={DataStorage[0].object}
-        />
-        <BlogHowTo HowToData={howToRead} />
-        <BlogSections SectionNavigationMenu={DataStorage} />
-        <BlogForm />
-        <BlogBottomNavigation HeaderNavigationMenu={DataStorage} />
+        <Navbar />
+        <BlogSidebar HeaderNavigationMenu={DataStorage} />
+        <Box
+          sx={{
+            height: 'auto',
+            width: {
+              xs: '100%',
+              sm: '100%',
+              md: '90%',
+              lg: '90%',
+              xl: '90%',
+            },
+            display: 'flex',
+            alignItems: 'center',
+            jusitfyContent: 'center',
+            flexDirection: 'column',
+            marginTop: '8em',
+            position: {
+              xs: 'absolute',
+              sm: 'absolute',
+              md: 'relative',
+              lg: 'relative',
+              xl: 'relative',
+            },
+          }}
+        >
+          <BlogHeader
+            HeaderNavigationMenu={DataStorage}
+            HeaderCarouselItems={DataStorage[0].object}
+          />
+          <BlogHowTo HowToData={howToRead} />
+          <BlogSections SectionNavigationMenu={DataStorage} />
+          <BlogForm />
+          <BlogBottomNavigation HeaderNavigationMenu={DataStorage} />
+        </Box>
       </Box>
-    </Box>
+      <Footer />
+    </>
   );
 }
 

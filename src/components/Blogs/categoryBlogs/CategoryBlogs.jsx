@@ -13,6 +13,7 @@ import Navbar from '../../Navbar/Navbar';
 import CategoryBlogHeader from './CategoryBlogHeader';
 import CategoryBlogSidebar from './CategoryBlogSidebar';
 import CategoryBottomNavigation from './CategoryBottomNavigation';
+import Footer from '../../Footer/footer';
 
 function CategoryBlogs() {
   const navigate = useNavigate();
@@ -86,7 +87,7 @@ function CategoryBlogs() {
     {
       icon: (
         <AutoStoriesIcon
-          sx={{ color: 'white', '&:hover': { color: 'gold ' } }}
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
         />
       ),
       object: topStories,
@@ -99,7 +100,9 @@ function CategoryBlogs() {
     },
     {
       icon: (
-        <TimerIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <TimerIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: recentPosts,
       name: 'Recent Posts',
@@ -111,7 +114,9 @@ function CategoryBlogs() {
     },
     {
       icon: (
-        <SchoolIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />
+        <SchoolIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
       ),
       object: educationalPosts,
       name: 'Education',
@@ -122,7 +127,11 @@ function CategoryBlogs() {
       title3: 'New Way To Flow',
     },
     {
-      icon: <PaidIcon sx={{ color: 'white', '&:hover': { color: 'gold ' } }} />,
+      icon: (
+        <PaidIcon
+          sx={{ color: 'secondary.main', '&:hover': { color: 'info.main' } }}
+        />
+      ),
       object: moneySavingTips,
       name: 'Money Saving',
       href: '/moneysaving',
@@ -134,129 +143,136 @@ function CategoryBlogs() {
   ];
 
   return (
-    <Box
-      sx={{ display: 'flex', alignItems: 'start', justifyContent: 'center' }}
-    >
-      <Navbar />
-      <CategoryBlogSidebar HeaderNavigationMenu={DataStorage} />
+    <>
       <Box
-        sx={{
-          height: 'auto',
-          width: {
-            xs: '100%',
-            sm: '100%',
-            md: '90%',
-            lg: '90%',
-            xl: '90%',
-          },
-          display: 'flex',
-          alignItems: 'center',
-          jusitfyContent: 'center',
-          flexDirection: 'column',
-          marginTop: '8em',
-        }}
+        sx={{ display: 'flex', alignItems: 'start', justifyContent: 'center' }}
       >
-        <CategoryBlogHeader
-          HeaderNavigationMenu={DataStorage}
-          HeaderText={categoryBlogs}
-        />
-        {categoryBlogs.map((item) => (
-          <Box
-            sx={{
-              width: {
-                xl: '70%',
-                lg: '70%',
-                md: '70%',
-                sm: '90%',
-                xs: '90%',
-              },
-              height: {
-                xl: '55vh',
-                lg: '55vh',
-                md: '55vh',
-                sm: '55vh',
-                xs: '55vh',
-              },
-              marginBottom: '4em',
-              borderRadius: '15px',
-              flexDirection: 'column',
-              display: 'flex',
-              alignItems: 'start',
-              justifyContent: 'center',
-              border: '2px solid white',
-              boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-              backgroundColor: '#224776',
-            }}
-          >
+        <Navbar />
+        <CategoryBlogSidebar HeaderNavigationMenu={DataStorage} />
+        <Box
+          sx={{
+            height: 'auto',
+            width: {
+              xs: '100%',
+              sm: '100%',
+              md: '90%',
+              lg: '90%',
+              xl: '90%',
+            },
+            display: 'flex',
+            alignItems: 'center',
+            jusitfyContent: 'center',
+            flexDirection: 'column',
+            marginTop: '8em',
+          }}
+        >
+          <CategoryBlogHeader
+            HeaderNavigationMenu={DataStorage}
+            HeaderText={categoryBlogs}
+          />
+          {categoryBlogs.map((item) => (
             <Box
               sx={{
-                height: '85%',
-                width: '100%',
-                // eslint-disable-next-line no-underscore-dangle
-                backgroundImage: `url(${
-                  // eslint-disable-next-line no-underscore-dangle
-                  item.mainImage?.asset?._ref
-                    ? // eslint-disable-next-line max-len, no-underscore-dangle
-                      urlFor(item.mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
-                    : placeholderImageUrl // Fallback URL or keep as an empty string
-                })`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'none',
-                backgroundPosition: 'center',
-                borderBottom: '2px solid white',
-                borderTopRightRadius: '15px',
-                borderTopLeftRadius: '15px',
-              }}
-            />
-            <Box
-              sx={{
-                height: '15%',
-                width: '100%',
+                width: {
+                  xl: '70%',
+                  lg: '70%',
+                  md: '70%',
+                  sm: '90%',
+                  xs: '90%',
+                },
+                height: {
+                  xl: '55vh',
+                  lg: '55vh',
+                  md: '55vh',
+                  sm: '55vh',
+                  xs: '55vh',
+                },
+                marginBottom: '4em',
+                borderRadius: '15px',
+                flexDirection: 'column',
                 display: 'flex',
-                alignItems: 'center',
-                gap: '1em',
-                backgroundColor: '#224675ff',
-                borderBottomRightRadius: '13px',
-                borderBottomLeftRadius: '13px',
+                alignItems: 'start',
+                justifyContent: 'center',
+                borderSize: '2px',
+                borderStyle: 'solid',
+                borderColor: 'primary.main',
+                boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                backgroundColor: 'primary.main',
               }}
             >
-              <Typography
-                variant='h6'
+              <Box
                 sx={{
-                  marginLeft: {
-                    xl: '1em',
-                    lg: '1em',
-                    md: '.4em',
-                    sm: '1em',
-                    xs: '.7em',
-                  },
-                  color: 'white',
-                  fontWeight: 'bold',
-                  width: '70%',
+                  height: '85%',
+                  width: '100%',
+                  // eslint-disable-next-line no-underscore-dangle
+                  backgroundImage: `url(${
+                    // eslint-disable-next-line no-underscore-dangle
+                    item.mainImage?.asset?._ref
+                      ? // eslint-disable-next-line max-len, no-underscore-dangle
+                        urlFor(item.mainImage.asset._ref).url() // Ensure this method call is correct based on your imageUrlBuilder setup
+                      : placeholderImageUrl // Fallback URL or keep as an empty string
+                  })`,
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'none',
+                  backgroundPosition: 'center',
+                  borderBottomSize: '2px',
+                  borderBottomStyle: 'solid',
+                  borderBottomColor: 'primary.main',
+                  borderTopRightRadius: '15px',
+                  borderTopLeftRadius: '15px',
+                }}
+              />
+              <Box
+                sx={{
+                  height: '15%',
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1em',
+                  backgroundColor: 'primary.main',
+                  borderBottomRightRadius: '13px',
+                  borderBottomLeftRadius: '13px',
                 }}
               >
-                {item.title ? <>{item.title} </> : 'loading...'}
-              </Typography>
-              <Button
-                variant='contained'
-                color='secondary'
-                sx={{
-                  marginLeft: 'auto',
-                  marginRight: '1em',
-                  width: '150px',
-                  height: '35px',
-                  color: '#224675ff',
-                }}
-                onClick={() => navigate(`/blog/${item?.slug?.current}`)}
-              >
-                Read Today
-              </Button>
+                <Typography
+                  variant='h6'
+                  sx={{
+                    marginLeft: {
+                      xl: '1em',
+                      lg: '1em',
+                      md: '.4em',
+                      sm: '1em',
+                      xs: '.7em',
+                    },
+                    color: 'secondary.main',
+                    fontWeight: 'bold',
+                    width: '70%',
+                  }}
+                >
+                  {item.title ? <>{item.title} </> : 'loading...'}
+                </Typography>
+                <Button
+                  variant='contained'
+                  color='secondary'
+                  sx={{
+                    marginLeft: 'auto',
+                    marginRight: '1em',
+                    width: '150px',
+                    height: '35px',
+                    color: 'primary.main',
+                  }}
+                  onClick={() => navigate(`/blog/${item?.slug?.current}`)}
+                >
+                  Read Today
+                </Button>
+              </Box>
             </Box>
-          </Box>
-        ))}
-        <CategoryBottomNavigation HeaderNavigationMenu={DataStorage} />
+          ))}
+          <CategoryBottomNavigation HeaderNavigationMenu={DataStorage} />
+        </Box>
       </Box>
-    </Box>
+      <Footer />
+    </>
   );
 }
 

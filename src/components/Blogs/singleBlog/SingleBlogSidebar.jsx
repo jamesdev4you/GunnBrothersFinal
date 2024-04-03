@@ -13,30 +13,42 @@ function SingleBlogSidebar(props) {
   const [change, setChange] = React.useState(false);
   console.log(change);
   return (
-    <Box sx={{
-      width: {
-        xs: '0%', sm: '0%', md: '0%', lg: '18%', xl: '15%',
-      },
-      height: '100vh',
-      position: 'sticky',
-      left: '0',
-      top: '0',
-    }}
+    <Box
+      sx={{
+        width: {
+          xs: '0%',
+          sm: '0%',
+          md: '0%',
+          lg: '18%',
+          xl: '15%',
+        },
+        height: '100vh',
+        position: 'sticky',
+        left: '0',
+        top: '0',
+      }}
     >
-
       <Box
         sx={{
-          backgroundColor: '#224675ff',
+          backgroundColor: 'primary.main',
           borderRight: '1px solid white',
           width: {
-            xs: '0%', sm: '0%', md: '0%', lg: change === true ? '100%' : '40%', xl: change === true ? '100%' : '40%',
+            xs: '0%',
+            sm: '0%',
+            md: '0%',
+            lg: change === true ? '100%' : '40%',
+            xl: change === true ? '100%' : '40%',
           },
           transition: 'ease-in-out .2s',
           height: '100vh',
           left: '0',
           top: '0',
           display: {
-            xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex',
+            xs: 'none',
+            sm: 'none',
+            md: 'none',
+            lg: 'flex',
+            xl: 'flex',
           },
           alignItems: 'center',
           justifyContent: 'start',
@@ -45,39 +57,79 @@ function SingleBlogSidebar(props) {
         onClick={() => setChange(!change)}
       >
         <Typography
-          variant="h5"
+          variant='h5'
           sx={{
-            '&:hover': { cursor: 'pointer', color: 'gold' }, transition: 'ease-in-out .2s', fontWeight: 'bold', textAlign: 'center', color: 'white', marginTop: '5em', paddingBottom: '1em', borderBottom: '1px solid white', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '.3em',
+            '&:hover': { cursor: 'pointer', '&:hover': { color: 'info.main' } },
+            transition: 'ease-in-out .2s',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            color: 'white',
+            marginTop: '5em',
+            paddingBottom: '1em',
+            borderBottom: '1px solid white',
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '.3em',
           }}
         >
           {change === true ? (
-            <KeyboardArrowDownIcon sx={{
-              width: '40px', height: '40px', marginRight: 'auto', marginLeft: '.5em',
-            }}
+            <KeyboardArrowDownIcon
+              sx={{
+                width: '40px',
+                height: '40px',
+                marginRight: 'auto',
+                marginLeft: '.5em',
+              }}
             />
           ) : (
-            <KeyboardArrowRightIcon sx={{
-              width: '40px', height: '40px', margin: 'auto',
-            }}
+            <KeyboardArrowRightIcon
+              sx={{
+                width: '40px',
+                height: '40px',
+                margin: 'auto',
+              }}
             />
           )}
         </Typography>
         {props.HeaderNavigationMenu.map((item) => (
           <Box
             sx={{
-              color: 'white', cursor: 'pointer', '&:hover': { color: 'gold' }, transition: 'ease-in-out .2s', gap: '15px', display: 'flex', alignItems: 'center', justifyContent: 'start', width: '100%', height: '5em', borderBottom: '1px solid white',
+              color: 'white',
+              cursor: 'pointer',
+              '&:hover': { color: 'info.main' },
+              transition: 'ease-in-out .2s',
+              gap: '15px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'start',
+              width: '100%',
+              height: '5em',
+              borderBottom: '1px solid white',
             }}
-            onClick={() => navigate(`/blog/category/${item.object[0].categories[0].slug.current}`)}
+            onClick={() =>
+              navigate(
+                `/blog/category/${item.object[0].categories[0].slug.current}`
+              )
+            }
           >
             <Typography
-              variant="h6"
+              variant='h6'
               sx={{
-                textAlign: 'left', marginLeft: '1em', display: change === true ? 'inline' : 'none', transition: 'ease-in-out 1s',
+                textAlign: 'left',
+                marginLeft: '1em',
+                display: change === true ? 'inline' : 'none',
               }}
             >
               {item.name}
             </Typography>
-            <div style={{ margin: change === true ? '0px' : 'auto', transition: 'ease-in-out .1s' }}>
+            <div
+              style={{
+                margin: change === true ? '0px' : 'auto',
+                transition: 'ease-in-out .1s',
+              }}
+            >
               {item?.icon}
             </div>
           </Box>

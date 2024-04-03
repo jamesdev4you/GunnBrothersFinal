@@ -57,7 +57,7 @@ function CategoryBlogHeader(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: '#e0a83fff',
+          color: 'primary.main',
           fontWeight: 'bold',
         }}
       >
@@ -74,7 +74,7 @@ function CategoryBlogHeader(props) {
             xs: '95%',
           },
           textAlign: 'center',
-          color: 'white',
+          color: 'primary.main',
           marginBottom: '1em',
         }}
       >
@@ -90,7 +90,7 @@ function CategoryBlogHeader(props) {
             sm: '90%',
             xs: '95%',
           },
-          backgroundColor: 'white',
+          backgroundColor: 'primary.main',
           marginBottom: '3em',
         }}
       />
