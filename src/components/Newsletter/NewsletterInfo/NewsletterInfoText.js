@@ -3,8 +3,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { MyNormalButton } from '../../styledComponents';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 
 const NewsletterInfoText = () => {
   return (
