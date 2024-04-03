@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Blog from './components/Blogs/Blog';
 import SingleBlog from './components/Blogs/singleBlog/SingleBlog';
 import CategoryBlogs from './components/Blogs/categoryBlogs/CategoryBlogs';
+import Newsletter from './components/Newsletter/Newsletter';
 
 const theme = createTheme({
   palette: {
@@ -75,6 +76,7 @@ function App() {
           path='/blog/category/:categorySlug'
           element={<CategoryBlogs> </CategoryBlogs>}
         />{' '}
+        <Route path='/newsletter' element={<Newsletter />} />
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>
