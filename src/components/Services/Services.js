@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import NavBar from '../Navbar/Navbar';
+import ServicesHeader from './ServicesHeader/ServicesHeader';
 import Footer from '../Footer/footer';
 
 const Services = () => {
@@ -20,6 +21,7 @@ const Services = () => {
       }}
     >
       <NavBar />
+      <ServicesHeader />
       <Footer />
     </Box>
   );
