@@ -10,6 +10,7 @@ import Newsletter from './components/Newsletter/Newsletter';
 import FAQ from './components/FAQ/FAQ';
 import Services from './components/Services/Services';
 import ServicesCategoty from './components/ServicesCategory/ServicesCategoty';
+import Contact from './components/Contact/Contact';
 
 const theme = createTheme({
   palette: {
@@ -86,6 +87,7 @@ function App() {
           path='/services/:slug'
           element={<ServicesCategoty> </ServicesCategoty>}
         />{' '}
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>
