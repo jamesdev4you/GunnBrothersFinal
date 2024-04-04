@@ -25,13 +25,13 @@ const ServicesTextHeader = () => {
         variant='h1'
         sx={{ fontWeight: 'bold', textAlign: { xs: 'center', sm: 'none' } }}
       >
-        The Gunn Brothers
+        Fixing the Broken
       </Typography>
       <Typography
         variant='h2'
         sx={{ fontWeight: 'bold', textAlign: { xs: 'center', sm: 'none' } }}
       >
-        of Tampa Bay
+        Without going Broke
       </Typography>
       <Typography
         variant='subtitle1'
