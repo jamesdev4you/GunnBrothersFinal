@@ -8,6 +8,7 @@ import SingleBlog from './components/Blogs/singleBlog/SingleBlog';
 import CategoryBlogs from './components/Blogs/categoryBlogs/CategoryBlogs';
 import Newsletter from './components/Newsletter/Newsletter';
 import FAQ from './components/FAQ/FAQ';
+import Services from './components/Services/Services';
 
 const theme = createTheme({
   palette: {
@@ -79,6 +80,7 @@ function App() {
         />{' '}
         <Route path='/newsletter' element={<Newsletter />} />
         <Route path='/faq' element={<FAQ />} />
+        <Route path='/services' element={<Services />} />
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>
