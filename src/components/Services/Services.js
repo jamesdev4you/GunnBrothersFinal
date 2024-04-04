@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import NavBar from '../Navbar/Navbar';
 import ServicesHeader from './ServicesHeader/ServicesHeader';
 import RequestServiceNow from '../Home/requestServiceNow/requestServiceNow';
+import ServicesInfo from './ServicesInfo/ServicesInfo';
 import HowCanWeHelp from '../Home/howCanWeHelp/howCanWeHelp';
 import Footer from '../Footer/footer';
 
@@ -25,6 +26,7 @@ const Services = () => {
       <NavBar />
       <ServicesHeader />
       <RequestServiceNow />
+      <ServicesInfo />
       <HowCanWeHelp />
       <Footer />
     </Box>
