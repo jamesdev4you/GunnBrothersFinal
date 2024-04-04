@@ -11,6 +11,7 @@ import FAQ from './components/FAQ/FAQ';
 import Services from './components/Services/Services';
 import ServicesCategoty from './components/ServicesCategory/ServicesCategoty';
 import Contact from './components/Contact/Contact';
+import PriceEstimate from './components/PriceEstimate/PriceEstimate';
 
 const theme = createTheme({
   palette: {
@@ -88,6 +89,7 @@ function App() {
           element={<ServicesCategoty> </ServicesCategoty>}
         />{' '}
         <Route path='/contact' element={<Contact />} />
+        <Route path='/priceestimate' element={<PriceEstimate />} />
         <Route path='*' element={<Home />} />
       </Routes>
     </ThemeProvider>

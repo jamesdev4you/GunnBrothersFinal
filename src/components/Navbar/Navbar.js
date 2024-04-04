@@ -16,8 +16,6 @@ import { Outlet } from 'react-router-dom';
 import { MyHeaderButton } from '../styledComponents';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import Typography from '@mui/material/Typography';
-import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
@@ -47,7 +45,7 @@ const navItems = [
     ],
   },
   { text: 'Contact', href: '/contact' },
-  { text: 'Estimate', href: '/priceestimate' },
+  { text: 'Price Estimate', href: '/priceestimate' },
 ];
 
 export default function NavBar() {
@@ -154,7 +152,7 @@ export default function NavBar() {
             {navItems.map((item, index) => (
               <ListItem
                 key={item.text}
-                sx={{ margin: '15px 0px' }}
+                sx={{ margin: '15px 0px', width: 'auto' }}
                 disablePadding
               >
                 {item.dropdownItems ? (
