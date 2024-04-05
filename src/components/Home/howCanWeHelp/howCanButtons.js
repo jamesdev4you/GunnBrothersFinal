@@ -12,7 +12,7 @@ const HowCanButtons = () => {
         display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'flex', xs: 'none' },
         alignItems: 'center',
         justifyContent: 'space-around',
-        backgroundColor: 'black',
+        backgroundColor: 'primary.main',
         border: '3px solid #B8DBD9',
         borderBottomRightRadius: '60px',
       }}

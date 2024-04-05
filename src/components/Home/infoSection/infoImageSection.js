@@ -9,9 +9,14 @@ const InfoImageSection = () => {
     <>
       <Box
         sx={{
-          height: {xl: '60vh', lg: '60vh', md: '50vh', sm: '70vh', xs:'70vh'},
-          width: {xl: '40%', lg: '40%', md: '45%', sm: '80%', xs: '100%'},
-          border: '3px solid #B8DBD9',
+          height: {
+            xl: '60vh',
+            lg: '60vh',
+            md: '50vh',
+            sm: '70vh',
+            xs: '70vh',
+          },
+          width: { xl: '40%', lg: '40%', md: '45%', sm: '80%', xs: '100%' },
           boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
           backgroundImage: `url(${Technician})`,
           backgroundSize: 'cover',
@@ -28,17 +33,19 @@ const InfoImageSection = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'space-around',
-            backgroundColor: 'black',
+            backgroundColor: 'primary.main',
             position: 'absolute',
             bottom: '-80px',
             left: '-3px',
-            border: '3px solid #B8DBD9',
+            borderSize: '3px',
+            borderStyle: 'solid',
+            borderColor: 'secondary.main',
             borderBottomRightRadius: '60px',
             paddingBottom: '15px',
           }}
         >
           <Typography
-            variant='h3'
+            variant='h4'
             sx={{ color: 'secondary.main', marginTop: '5px' }}
           >
             100% Satisfaction

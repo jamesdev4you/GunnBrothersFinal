@@ -17,19 +17,19 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#000000',
+      main: '#011638',
     },
     secondary: {
-      main: '#F4F4F9',
+      main: '#FFFFFF',
     },
     error: {
       main: '#2F4550',
     },
     warning: {
-      main: '#586F7C',
+      main: '#E9F4F3',
     },
     info: {
-      main: '#B8DBD9',
+      main: '#FFBD00',
     },
   },
   typography: {

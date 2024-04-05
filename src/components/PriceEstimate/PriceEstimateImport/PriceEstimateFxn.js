@@ -12,15 +12,6 @@ import {
   DirectionsRenderer,
 } from '@react-google-maps/api';
 import { useRef, useState } from 'react';
-import CheckIcon from '@mui/icons-material/Check';
-import PaidIcon from '@mui/icons-material/Paid';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-
-const word = 'First Things First...'; //coincidence happened lol
-const word2 = 'Type Address Below!';
-
-const desc =
-  'Get an accurate estimate of our service cost by using our convenient service estimator. Simply enter your address and plan your budget accordingly.';
 
 const center = { lat: 27.97173, lng: -82.42262 };
 

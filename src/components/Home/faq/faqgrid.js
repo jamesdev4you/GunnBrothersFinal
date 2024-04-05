@@ -47,11 +47,11 @@ const FAQGrid = () => {
               height: { xl: '4em', lg: '4em', md: '4em', sm: '4em', xs: '6em' },
               alignItems: 'center',
               justifyContent: 'space-between',
-              backgroundColor: 'black',
+              backgroundColor: 'primary.main',
               borderBottomRightRadius: '20px',
               padding: '1em',
               cursor: 'pointer',
-              borderColor: 'info.main',
+              borderColor: 'warning.main',
               borderWidth: '2px',
               borderStyle: 'solid',
             }}

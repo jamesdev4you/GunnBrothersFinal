@@ -15,7 +15,7 @@ const InfoTextSection = () => {
         sx={{
           width: '25px',
           height: '6px',
-          backgroundColor: 'primary.main',
+          backgroundColor: 'info.main',
           marginTop: '12px',
           marginRight: '8px',
         }}
@@ -60,8 +60,10 @@ const InfoTextSection = () => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'space-around',
-            backgroundColor: 'black',
-            border: '3px solid #B8DBD9',
+            backgroundColor: 'primary.main',
+            borderSize: '3px',
+            borderStyle: 'solid',
+            borderColor: 'warning.main',
             borderBottomRightRadius: '60px',
             paddingBottom: '15px',
           }}

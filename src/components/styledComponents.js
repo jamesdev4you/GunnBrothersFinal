@@ -13,7 +13,7 @@ const HeaderButton = styled(Button)(({ theme }) => ({
   outline: '0',
   color: theme.palette.text.primary,
   position: 'relative',
-  backgroundColor: 'white',
+  backgroundColor: theme.palette.warning.main,
   userSelect: 'none',
   touchAction: 'manipulation',
   borderRadius: '13px',
@@ -133,7 +133,7 @@ const HoverButton = styled(Button)(({ theme }) => ({
     left: '0px',
   },
   '&:hover': {
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.info.main,
   },
   [`@media (min-width: 992px`]: {
     padding: '10px 20px 10px',

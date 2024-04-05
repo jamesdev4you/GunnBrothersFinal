@@ -73,7 +73,8 @@ const HowCanGrid = () => {
                 xs: '10vh',
               },
               backgroundColor: 'primary.main',
-              borderColor: 'info.main',
+              transition: 'all .3s ease',
+              borderColor: 'warning.main',
               borderRadius: '15px',
               borderWidth: '3px',
               borderStyle: 'solid',
@@ -95,13 +96,16 @@ const HowCanGrid = () => {
                 xs: 'center',
               },
               gap: '1em',
+              '&:hover': {
+                borderColor: 'info.main',
+              },
             }}
           >
             <SvgIcon
               viewBox={item.viewBox}
               component={item.logo}
               sx={{
-                transition: 'all .2s ease-in-out',
+                transition: 'all .3s ease',
                 height: {
                   xs: '30px',
                   sm: '60px',
@@ -117,6 +121,7 @@ const HowCanGrid = () => {
                   lg: hovered === item.key ? '100px' : '120px',
                   xl: hovered === item.key ? '50px' : '30px',
                 },
+
                 color: hovered === item.key ? 'info.main' : 'secondary.main',
               }}
             />
@@ -125,6 +130,7 @@ const HowCanGrid = () => {
               sx={{
                 color: hovered === item.key ? 'info.main' : 'secondary.main',
                 fontWeight: 'bold',
+                transition: 'all .3s ease',
               }}
             >
               {item.text}

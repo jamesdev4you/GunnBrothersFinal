@@ -16,7 +16,7 @@ import { Outlet } from 'react-router-dom';
 import { MyHeaderButton } from '../styledComponents';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const drawerWidth = 240;
@@ -26,7 +26,7 @@ const navItems = [
     text: 'About',
     href: '/about',
     dropdownItems: [
-      { text: 'ABOUT', href: '/about' },
+      { text: 'About', href: '/about' },
       { text: 'Blogs', href: '/blog' },
       { text: 'Newsletter', href: '/newsletter' },
       { text: 'FAQ', href: '/faq' },
@@ -36,7 +36,7 @@ const navItems = [
     text: 'Services',
     href: '/services',
     dropdownItems: [
-      { text: 'SERVICES', href: '/services' },
+      { text: 'Services', href: '/services' },
       { text: 'Air Conditioning', href: '/services/air-conditioning' },
       { text: 'Heating', href: '/services/heating' },
       { text: 'Thermostat', href: '/services/thermostat' },
@@ -146,7 +146,7 @@ export default function NavBar() {
                 xl: '25%',
               },
               margin: 'auto',
-              gap: '3em',
+              gap: '6em',
             }}
           >
             {navItems.map((item, index) => (
@@ -160,21 +160,14 @@ export default function NavBar() {
                     <PopupState variant='popover' popupId='demo-popup-menu'>
                       {(popupState) => (
                         <React.Fragment>
-                          <Button
+                          <Link
                             variant='contained'
                             {...bindTrigger(popupState)}
-                            sx={{
-                              '&.MuiButton-root': {
-                                color: 'white',
-                                '&:hover': {
-                                  color: '#B8DBD9',
-                                  textDecoration: 'underline',
-                                },
-                              },
-                            }}
+                            sx={{ color: 'white' }}
+                            className='menu_link'
                           >
                             {item.text}
-                          </Button>
+                          </Link>
                           <Menu
                             id={item.text}
                             {...bindMenu(popupState)}
@@ -184,7 +177,7 @@ export default function NavBar() {
                             }}
                             sx={{
                               '& .MuiPaper-root': {
-                                backgroundColor: 'black',
+                                backgroundColor: 'primary.main',
                               },
                             }}
                           >
@@ -193,7 +186,7 @@ export default function NavBar() {
                                 key={dropdownItem.text}
                                 onClick={popupState.close}
                                 sx={{
-                                  backgroundColor: 'black',
+                                  backgroundColor: 'primary.main',
                                   paddingTop: '0px',
                                   marginLeft: '1px',
                                   marginBottom: '15px',
@@ -213,15 +206,9 @@ export default function NavBar() {
                     </PopupState>
                   </>
                 ) : (
-                  <Button variant='contained'>
-                    <NavLink
-                      key={item.href}
-                      className='menu_link'
-                      to={item.href}
-                    >
-                      {item.text}
-                    </NavLink>
-                  </Button>
+                  <NavLink key={item.href} className='menu_link' to={item.href}>
+                    {item.text}
+                  </NavLink>
                 )}
               </ListItem>
             ))}
