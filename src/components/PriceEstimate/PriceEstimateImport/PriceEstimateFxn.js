@@ -81,8 +81,9 @@ export default function PriceEstimateFxn() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          height: '100vh',
-          width: '100vw',
+          height: '50vh',
+          width: '30vw',
+          borderRadius: '30px',
         }}
       >
         <Box
@@ -92,12 +93,20 @@ export default function PriceEstimateFxn() {
             top: '0',
             height: '100%',
             width: '100%',
+            borderRadius: '33px',
+            borderWidth: '3px',
+            borderStyle: 'solid',
+            borderColor: 'black',
           }}
         >
           <GoogleMap
             center={center}
             zoom={15}
-            mapContainerStyle={{ width: '100%', height: '100%' }}
+            mapContainerStyle={{
+              width: '100%',
+              height: '100%',
+              borderRadius: '30px',
+            }}
             options={{
               zoomControl: false,
               streetViewControl: false,
@@ -114,10 +123,10 @@ export default function PriceEstimateFxn() {
         </Box>
         <Box
           sx={{
-            padding: '20px',
-            height: '15%',
-            padding: '10px',
-            backgroundColor: 'info.main',
+            height: '30%',
+            width: '100%',
+            padding: '2em 2em',
+            backgroundColor: 'primary.main',
             borderTop: 'none',
             zIndex: 0,
           }}
@@ -133,13 +142,13 @@ export default function PriceEstimateFxn() {
             }}
           >
             <IconButton
-              sx={{ backgroundColor: 'white', color: 'red' }}
+              sx={{ backgroundColor: 'white', color: 'primary.main' }}
               onClick={() => map.panTo(center)}
             >
               <LocationOn />
             </IconButton>
             <IconButton
-              sx={{ backgroundColor: 'white', color: 'red' }}
+              sx={{ backgroundColor: 'white', color: 'primary.main' }}
               onClick={clearRoute}
             >
               <AddLocationAlt />
@@ -149,7 +158,15 @@ export default function PriceEstimateFxn() {
                 type='text'
                 placeholder='Destination'
                 inputRef={destiantionRef}
-                sx={{ minWidth: '100px' }}
+                InputProps={{
+                  style: {
+                    backgroundColor: 'white',
+                    '& .MuiFormLabel-root': {
+                      color: 'red',
+                    },
+                  },
+                }}
+                sx={{ width: '100%' }}
                 variant='outlined'
                 size='small'
               />
@@ -170,6 +187,7 @@ export default function PriceEstimateFxn() {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              color: 'white',
             }}
           >
             <Typography>

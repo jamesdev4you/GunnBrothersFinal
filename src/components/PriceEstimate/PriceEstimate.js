@@ -1,7 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import NavBar from '../Navbar/Navbar';
-import PriceEstimateFxn from './PriceEstimateImport/PriceEstimateFxn';
+import PriceEstimateInfo from './PriceEstimateInfo/PriceEstimateInfo';
+import AboutHeader from '../About/aboutHeader/AboutHeader';
+import AboutSignUp from '../About/aboutSignUp/AboutSignUp';
 import Footer from '../Footer/footer';
 
 const PriceEstimate = () => {
@@ -21,7 +23,9 @@ const PriceEstimate = () => {
       }}
     >
       <NavBar />
-      <PriceEstimateFxn />
+      <AboutHeader />
+      <AboutSignUp />
+      <PriceEstimateInfo />
       <Footer />
     </Box>
   );
